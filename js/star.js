@@ -7,7 +7,7 @@ function mesProjets(){
 }
 
 function quiSuisJe(){
-    location.href = '/site/whoamI.html' ; /* Lien vers la page de présentation de mon parcours scolaire. */
+    location.href = '../site/whoamI.html' ; /* Lien vers la page de présentation de mon parcours scolaire. */
 }
 
 function hobbyPassion(){
