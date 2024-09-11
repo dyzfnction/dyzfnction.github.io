@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+
+        <title> HSH </title>
+
+        <script type = "text/javascript" src = "../js/star.js"> </script>   <!-- relie la page au javascript //-->
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/star.css" /> <!-- relie la page au css //-->
+
+    </head>
+
+    <body bgcolor = "black">
+
+        <div class = "menuDeroulant"> <!-- Le menu qui se trouve dans le logo. //-->
+	
+			<div class = "liste">
+				<img src = "../image/pourMenu.gif" title = "Menu" onClick = "" height = "64" />
+			</div>
+			
+			<div>
+			
+				<div class = "espace"> </div>
+			
+				<div class = "categories" onClick = "firstPage()"> <span> Accueil </span> </div>
+				<div class = "categories" onClick = "quiSuisJe()"> <span> Scolarite </span> </div>
+				<div class = "categories" onClick = "mesProjets()"> <span> Projets </span> </div>
+				<div class = "categories" onClick = "projFormation()"> <span> Formation </span> </div>
+				<div class = "categories" onClick = "hobbyPassion()"> <span> Hobby </span> </div>
+				
+			</div>
+			
+		</div>
+
+
+        <div id = "lesTitresPages"> <!-- Titre de la page. //-->
+
+            MON DOSSIER DE VEILLE <br/>
+            TECHNOLOGIQUE
+
+       </div>
+
+       <div class = "contenuPage">
+            
+            <div id = "positionTexteQuiSuisJe" class = "texteContenuPage"> <!-- Mon parcours scolaire. //-->
+
+                <div> <!-- Synthèse de la veille. (Sujet de quoi parle la veille, dans quel cadre je l'ai réalisé etc.) //-->
+
+                    Les satellites sont une technologie en constante évolution, présente dans le monde enteir et sans qui, aujourd'hui, nous ne pourrions pas communiquer et évoluer aussi rapidement.
+                    Ils sont toujours de plus en plus présents dans nos vies et dans notre quotidien et nous permettent de nous adapter à l'enevironemment dans
+                    lequel on évolu. <br/></br>
+                    
+                    Il existe 4 grandes catégories de satellites : <br/></br>
+
+                    - Les satellites de communication <br/>
+                    - Les satellites de navigation <br/>
+                    - Les satellites d’observation de la Terre <br/>
+                    - Les satellites militaires <br/>
+
+                </div>       
+
+                <div> <!-- Cadre avec lien des articles //-->
+
+                        <li> <p class = "lien" onClick = "window.location.href = 'https://www.clubic.com/actualite-506473-mais-pourquoi-l-europe-fait-elle-decoller-ses-satellites-galileo-avec-spacex.html';" > Article 1 </p> </li> 
+                        
+                        <li> <p class = "lien" onClick = "window.location.href = 'https://www.caminteresse.fr/sciences/oui-on-pourrait-bien-mourir-a-cause-dun-debris-de-satellite-11190672/#:~:text=Selon%20une%20%C3%A9tude%20de%20la,0%2C84%20%25%20en%202035.';" > Article 2 </p> </li> 
+                        <li> <p class = "lien" onClick = "window.location.href = 'https://www.agence-adocc.com/actualites/le-japonais-astroscale-choisit-toulouse-pour-son-centre-de-satellites-nettoyeurs-de-lespace/';" > Article 3 </p> </li> 
+                        <li> <p class = "lien" onClick = "window.location.href = 'https://www.01net.com/actualites/starlink-a-un-probleme-avec-la-loi-en-france.html';" > Article 4 </p> </li> 
+
+
+                </div>
+
+                <div> <!-- Who knows yet? //-->
+
+
+
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </body>
+
+
+</html>
