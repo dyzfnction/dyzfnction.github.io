@@ -6,6 +6,30 @@ function mesProjets(){
 	location.href = '../site/mesProjets.html'; /* Lien vers la page de mes projets. */
 }
 
+function projet1(){
+	location.href = '../site/menagerie.html'; /* Lien vers la page de mes projets. */
+}
+
+function projet2(){
+	location.href = '../site/siteMarchand.html'; /* Lien vers la page de mes projets. */
+}
+
+function projet3(){
+	location.href = '../site/octimeStage.html'; /* Lien vers la page de mes projets. */
+}
+
+function projet4(){
+	location.href = '../site/getcet.html'; /* Lien vers la page de mes projets. */
+}
+
+function projet5(){
+	location.href = '../site/siojeux.html'; /* Lien vers la page de mes projets. */
+}
+
+function projet6(){
+	location.href = '../site/fripouille.html'; /* Lien vers la page de mes projets. */
+}
+
 function quiSuisJe(){
     location.href = '../site/whoamI.html' ; /* Lien vers la page de présentation de mon parcours scolaire. */
 }
@@ -17,6 +41,8 @@ function hobbyPassion(){
 function projFormation(){
     location.href = '../site/projetFormation.html' ; /* Lien vers la page de mon projet de formation. */
 }
+
+
 
 
 // VEILLE TECHNO

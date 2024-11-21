@@ -18,8 +18,6 @@
 	cursor : pointer ;
 }
 
-
-
 .partieHaute {
 	width : 100% ; /* Largeur de la partie haute de la page. */
 	height : 100% ; /* LHauteur de la partie haute de la page. */
@@ -458,8 +456,6 @@ span {
 
 	/* LES LIENS */
 
-
-
 #lienBoutton {
 	text-decoration : none ;
 	font-size : 1.5rem ;
@@ -473,7 +469,6 @@ span {
 
 
 	/* LES TITRES */
-
 
 #lesTitresPages {
 	font-family : Copperplate gothic ;  /* Ceci est la police du texte "Bienvenue". */
@@ -518,8 +513,8 @@ span {
 	padding-top : 1% ;  /* Espace du haut entre le bord et le contenu. */
 	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
 	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	border-radius : 25px ;
 }
-
 
 .cadreGauche {
 	width : 37% ;  /* La largeur. */
@@ -548,8 +543,33 @@ span {
 
 				
 
-
 	/* PAGE PARCOURS SCOLAIRE */
+
+.rectangleHautWhoAmI {
+	width : 83% ;  /* La largeur. */
+	height : 20% ; /*La hauteur.*/
+	margin-top : 3% ;
+	margin-bottom : 2% ;
+	margin-left : 5% ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+}
+
+
+#parcoursRectangleHaut {
+	color : #000000 ; 
+	background-color : #f81946 ; /* Couleur du fond du cercle. */
+}
+
+#parcoursRectangleHaut:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
 
 #parcoursCadreGauche {
 	color : #000000 ; 
