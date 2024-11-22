@@ -565,7 +565,7 @@ span {
   margin-left: 10%;
   margin-top : 2% ;
 }
-.item-box {
+.item-box { 
 	background-image : url(../image/pix.jpg);
 	background-position : center ; /* L'image de fond est centrer. */
 	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
