@@ -11,7 +11,7 @@ function projet1(){
 }
 
 function projet2(){
-	location.href = '../site/siteMarchand.html'; /* Lien vers la page de mes projets. */
+	location.href = '../site/siteMarchant.html'; /* Lien vers la page de mes projets. */
 }
 
 function projet3(){
