@@ -725,6 +725,93 @@ span {
 
 	/* PAGE DE PRESENTATION DE MES PROJETS INFORMATIQUES */
 
+.partieBasseProj {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 70% ; /*La hauteur.*/
+	top : 0 ;
+	
+
+}
+
+#carreGaucheProj {
+	background-color : #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 6% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+}
+
+#carreGaucheProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreMilieuProj {
+	background-color :  #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 36% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+
+}
+
+#carreMilieuProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreDroitProj {
+	background-color : #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ;  /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 66% ;
+	margin-bottom : 2% ;
+	float : right ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+	
+}
+
+#carreDroitProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
 /* Partie du Haut */
 
 .hautPageProjetsInfo {
