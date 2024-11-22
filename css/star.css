@@ -541,9 +541,82 @@ span {
 	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
 }
 
-				
+.partieSudCarrement {
+	margin-top : 60% ;
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 400% ; /*La hauteur.*/
+	top : 0 ;
+}
 
-	/* PAGE PARCOURS SCOLAIRE */
+.lesCertifs  {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin : 0;
+  background-color: #e0e0e0;
+  float : left ;
+}
+
+.row-wrapper {
+  display: flex;
+  gap: 150PX;
+  margin-left: 10%;
+  margin-top : 2% ;
+}
+.item-box {
+	background-image : url(../image/pix.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+  	height: 180;
+  	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	border-radius : 25px ;
+  	text-align: center;
+}
+.item-box2 {
+	background-image : url(../image/ateliergpd.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
+.item-box3 {
+	background-image : url(../image/cisco.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
+.item-box4 {
+	background-image : url(../image/secnum.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
 
 	/* PAGE PARCOURS SCOLAIRE */
 
