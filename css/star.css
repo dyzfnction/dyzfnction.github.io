@@ -550,7 +550,7 @@ span {
 	height : 20% ; /*La hauteur.*/
 	margin-top : 3% ;
 	margin-bottom : 2% ;
-	margin-left : 5% ;
+	margin-left : 15% ;
 	border-radius : 25px ;
 	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
 	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
@@ -562,7 +562,6 @@ span {
 	color : #000000 ; 
 	background-color : #f81946 ; /* Couleur du fond du cercle. */
 }
-
 #parcoursRectangleHaut:hover {
 	background-color : #000000 ; /* Couleur du fond du cercle. */
 	color : white ; /* Couleur du texte. */
@@ -575,7 +574,6 @@ span {
 	color : #000000 ; 
 	background-color : #e13154 ; /* Couleur du fond du cercle. */
 }
-
 #parcoursCadreGauche:hover {
 	background-color : #000000 ; /* Couleur du fond du cercle. */
 	color : white ; /* Couleur du texte. */
