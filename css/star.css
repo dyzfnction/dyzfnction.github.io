@@ -542,9 +542,9 @@ span {
 }
 
 .partieSudCarrement {
-	margin-top : 70% ;
+	margin-top : 60% ;
 	width : 100% ; /* Largeur de la partie haute de la page. */
-	height : 400% ; /*La hauteur.*/
+	height : 50% ; /*La hauteur.*/
 	top : 0 ;
 }
 
@@ -553,7 +553,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100;
+  height: 100vh;
   margin : 0;
   background-color: #e0e0e0;
   float : left ;
