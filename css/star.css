@@ -1224,32 +1224,3 @@ span {
 
 
 
-
-/* Responsive */
-
-.container {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de s'ajuster */
-    justify-content: space-around;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Ajuster la taille de la police */
-    }
-    .menu {
-        display: none; /* Masquer le menu sur les petits écrans */
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
