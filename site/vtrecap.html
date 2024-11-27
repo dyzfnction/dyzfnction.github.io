@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title> Le Récapitulatif </title>
+		<script type = "text/javascript" src = "../js/star.js"> </script>
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/veille.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body bgcolor = "black"> <!-- Le font est de couleur noire. //-->
+	
+		<p id = "categorie"> Récapitulatif </p> <!-- Nom en haut de la page. //-->
+		<div class = "articles" id = "centre"> <!-- Cela permet de centrer le tableau sur la page. //-->
+			<table border = "1" color = "white" width = "100%" cellspacing = "0"> <!-- Un tableau blanc, d'une largeur de 100%. //-->
+				<tr height = "275" width = "50%">
+					<td rowspan = "2" align = "center"  >
+						<p id = "recap"> <font face = "verdana">
+							Il existe 4 grandes catégories de satellites, envoyés dans l'espace et remplacés en <br/>
+							fonction de leur durée de vie (10 ans). Cependant, les envoies de satellites dans l'espace <br/>
+							laissent des traces et des débris qui peuvent retomber dans l'atmosphère Terrestre.
+							<br/><br/>
+							Les satellites sont importants car ils nous permettent d'interagir, de mieux connaître <br/>
+							l'environnement terrestre et de mieux nous protéger en cas de danger mais il faut veiller à <br/>
+							ce que leur utilisation ne devienne pas néfaste pour nous, les humains sur Terre. Face à cet <br/>
+							inconvénient, le secteur spacial tente d'apporter des innovations tels que les satellites <br/>
+							nettoyeurs qui pourraient nous permettre plus de sûreté et limité les risques de chute de débris.
+							<br/><br/>
+							Aussi, les satellites nous assurent une grande connectivité sur Terre mais il est important <br/>
+							de veiller à la sécurité des donnés qui circulent. Les pays doivent respecter des normes <br/>
+							même lorsqu'il s'agit de l'envoie des satellites.
+						</font> </p>
+					</td>
+					<td align = "center"> <!-- Les élément de la cellule sont centrés. //-->
+						<ul type = "disc">
+							<font face = "verdana"> <!-- Cela permet de lister les articles. //-->
+								<li> <p class = "lien" onClick = "window.location.href = 'https://www.clubic.com/actualite-506473-mais-pourquoi-l-europe-fait-elle-decoller-ses-satellites-galileo-avec-spacex.html';" > Article 1 </p> </li> 
+								<li> <p class = "lien" onClick = "window.location.href = 'https://www.caminteresse.fr/sciences/oui-on-pourrait-bien-mourir-a-cause-dun-debris-de-satellite-11190672/#:~:text=Selon%20une%20%C3%A9tude%20de%20la,0%2C84%20%25%20en%202035.';" > Article 2 </p> </li> 
+								<li> <p class = "lien" onClick = "window.location.href = 'https://www.agence-adocc.com/actualites/le-japonais-astroscale-choisit-toulouse-pour-son-centre-de-satellites-nettoyeurs-de-lespace/';" > Article 3 </p> </li> 
+								<li> <p class = "lien" onClick = "window.location.href = 'https://www.01net.com/actualites/starlink-a-un-probleme-avec-la-loi-en-france.html';" > Article 4 </p> </li> 
+							</font>
+						</ul>
+					</td>
+				</tr>
+				<tr height = "275" width = "50%">
+					<td align = "center"> <!-- Le texte est centré. //-->
+						<ul type = "disc">
+							<font face = "verdana">
+								<li> <p class = "lien" onClick = "window.location.href = 'https://pin.it/1IJNHic';" > Image Satellite </p> </li> <!-- Lien vers la première image utilisée dans les articles. //-->
+								<li> <p class = "lien" onClick = "window.location.href = 'https://pin.it/5Sx4wA1';" > Image Terre Satellite </p> </li> <!-- Lien vers la deuxième image. //-->
+								<li> <p class = "lien" onClick = "window.location.href = 'https://pin.it/5SzoFIh';" > Image Satellite Astrocale 1 </p> </li> <!-- Lien vers la troisième image. //-->
+								<li> <p class = "lien" onClick = "window.location.href = 'https://pin.it/H4TcjX6';" > Image Satellite Astrocale 2 </p> </li> <!-- Lien vers la quatrième image. //-->
+								<li> <p class = "lien" onClick = "window.location.href = 'https://pin.it/7oizSZW';" > Image Starlink </p> </li> <!-- Dèrenière image. //-->
+							</font>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>	
+		
+		<div id = "baspage">
+			<div id = "retour"> <!-- La flèche renvoie vert la page d'accueil. //-->
+				<img src = "../images/retour.jpg" height = "40" title = "Page d'accueil" onClick = "accueil()">
+			</div>
+		</div>
+	
+	</body>
+</html>
