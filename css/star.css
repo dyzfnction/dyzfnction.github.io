@@ -1,0 +1,1225 @@
+		/* PAGE ACCUEIL */
+
+#accueil {
+	font-family : Copperplate gothic ;  /* Ceci est la police du texte "Bienvenue". */
+	font-size : 4.5rem ;  /* Taille du texte. */
+	font-weight : bold ;  /* Le texte est en gras. */
+	text-align : center ;  /* Cela permet de mettre le titre au centre. */
+	font-weight : bold ;  /* Le texte est en gras. */
+	color : white ;  /* Le texte est de couleur blanche. */
+	margin-top : 2% ;  /* Le texte se trouve à 5% du haut de l'écran. */
+	margin-left : 4% ;  /* Le texte se trouve à 35% du bord de l'écran. */
+	top : 0 ;  /*  */
+	position : absolute ;  /* Pas trop compris mais c'est utile. */
+}
+
+#accueil:hover {
+	color : #956ca0 ; /* Changement de couleur du texte. */
+	cursor : pointer ;
+}
+
+.partieHaute {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 100% ; /* LHauteur de la partie haute de la page. */
+	top : 0 ;  /*  */
+	position : absolute ; /*  */
+}
+
+#cercle {
+	/* La forme : */
+	background-color : #956bad ; /* Ceci est la couleur du fond du cercle. */
+	border-radius : 50% ;  /* Les bordures de la formes sont arrondies à 50%. */
+	width: 25% ;  /* La largeur du cercle est de 30%. */
+	height: 42% ;  /* La taille du cercle est de 60%. */
+	top : 0 ;  /*  */
+	margin-top : 13% ;  /* Le cercle se trouve à 13% du haut de l'écran. */
+	margin-left : 13% ;  /* Le cercle se trouve à 17% de la bordure gauche de l'écran. */
+	float : left ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 2.2rem ;  /* Taille du texte. */
+	color : black ;  /* Le texte est de couleur blanche. */
+	padding-top : 8% ; /*  */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : center ;  /* Cela permet de mettre le titre au centre. */
+
+}
+
+#cercle:hover { /* Quand la souris se trouve sur le cercle, les couleurs changent. */
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+
+	border : solid 2px ;
+	border-color: #ffffff ;
+	cursor : pointer ;
+}
+
+
+#cadreIntro {
+
+	/* La forme : */
+	background-color : #5a366f ; /* Ceci est la couleur du fond du cercle. */
+	border : 1% ; /* Bordure du cadre. */
+	width: 30% ;  /* La largeur du cercle est de 30%. */
+	height: 60% ;  /* La taille du cercle est de 60%. */
+	top : 0 ;  /*  */
+	margin-top : 10% ;  /* Le cercle se trouve à 13% du haut de l'écran. */
+	margin-left : 53% ;  /* Le cercle se trouve à 17% de la bordure gauche de l'écran. */
+
+	/* Le texte : */
+	text-align : justify ;
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.5rem ;  /* Taille du texte. */
+	color : #000000 ;  /* Le texte est de couleur blanche. */
+	padding-top : 2% ; /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 2% ;  /* Espace du bas entre le bord et le contenu. */
+}
+
+#cadreIntro:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+
+a {
+	display : block;
+	width : 100% ;  /* La largeur. */
+}
+  
+
+.flecheBasPage {
+	margin-top : 43% ;
+	margin-left : 95% ;
+}
+
+.flecheHautPage {
+	margin-top : 4% ;
+	margin-left : 95% ;
+}
+
+.titreAccueil {
+	font-family : Copperplate gothic ;  /* Ceci est la police du texte "Bienvenue". */
+	font-size : 3.5rem ;  /* Taille du texte. */
+	font-weight : bold ;  /* Le texte est en gras. */
+	color : white ;  /* Le texte est de couleur blanche. */
+	top : 0 ;
+	margin-top : 49% ;
+	margin-bottom : 2% ;
+	margin-left : 4% ;  /* Le texte se trouve à 35% du bord de l'écran. */
+	position : absolute ;  /* Pas trop compris mais c'est utile. */
+	text-align : left ;  /* Cela permet de mettre le titre à gauche. */
+}
+
+.titre {
+	font-family : Copperplate gothic ;  /* Ceci est la police du texte "Bienvenue". */
+	font-size : 3.5rem ;  /* Taille du texte. */
+	font-weight : bold ;  /* Le texte est en gras. */
+	color : white ;  /* Le texte est de couleur blanche. */
+	margin-top : 3.5% ;
+	margin-bottom : 2% ;
+	margin-left : 4% ;  /* Le texte se trouve à 35% du bord de l'écran. */
+	position : absolute ;  /* Pas trop compris mais c'est utile. */
+	text-align : left ;  /* Cela permet de mettre le titre à gauche. */
+}
+
+.partieBasseAccueil {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 83% ; /*La hauteur.*/
+	top : 0 ;
+	margin-top : 54% ;
+
+}
+
+.partieBasse {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 83% ; /*La hauteur.*/
+	top : 0 ;
+	margin-top : 4% ;
+
+}
+
+.accueilCadreGaucheHaut {
+	width : 27% ;  /* La largeur. */
+	height : 26% ;  /*La hauteur.*/
+	margin-top : 2% ;
+	margin-bottom : 2% ;
+	margin-left : 2% ;
+	background-color : #804b79 ; /* Couleur du fond du cercle. */
+	color : #000000 ; 
+	cursor : pointer ;
+	float : left ;
+	position : absolute ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.7rem ;  /* Taille du texte. */
+	padding-top : 4.5% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : center ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.accueilCadreGaucheHaut:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+.accueilCadreGaucheBas {
+	width : 27% ;  /* La largeur. */
+	height : 26% ;  /*La hauteur.*/
+	margin-top : 20% ;
+	margin-bottom : 2% ;
+	margin-left : 2% ; 
+	background-color : #5d3b59 ; /* Couleur du fond du cercle. */
+	color : #000000 ; 
+	cursor : pointer ;
+	float : left ;
+	position : absolute ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.7rem ;  /* Taille du texte. */
+	padding-top : 4.5% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : center ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.accueilCadreGaucheBas:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+.accueilCadreDroitBasPage {
+	width : 27% ;  /* La largeur. */
+	height : 75% ;  /*La hauteur.*/
+	margin-top : 2% ;
+	margin-bottom : 2% ;
+	margin-right : 2% ;
+	background-color : #744a75 ; /* Couleur du fond du cercle. */
+	color : #000000 ; 
+	float : right ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.7rem ;  /* Taille du texte. */
+	padding-top : 7.5% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : center ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.accueilCadreDroitBasPage:hover,
+#lienBoutton {
+		background-color : #000000 ; /* Couleur du fond du cercle. */
+		color : white ; /* Couleur du texte. */
+		border : solid 2px ;
+		border-color: #ffffff ;
+}
+
+.boitemenu {
+	width : 30% ;  /* La largeur. */
+	margin-top : 14% ;
+	margin-left : 34.4% ;
+	position : absolute ;  /* Pas trop compris mais c'est utile. */
+}
+
+.boutonHaut {
+	width : 87% ;  /* La largeur. */
+	height : 9% ; /*La hauteur.*/
+	border-radius : 30px ;
+	background-color : #56335c ;
+	margin : auto ;
+
+	color : #000000 ; 
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	text-align : center ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 1% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 1% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 2% ; /* Espace du bas entre le bord et le contenu. */
+}
+
+.boutonHaut:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+
+	border : solid 2px ;
+	border-color: #ffffff ;
+	cursor : pointer ;
+}
+
+.boutonCentre {
+	width : 87% ;  /* La largeur. */
+	height : 9% ; /*La hauteur.*/
+	border-radius : 30px ;
+	background-color : #56335c ;
+	margin : auto ;
+	margin-top : 3.5% ;
+
+	color : #000000 ; 
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	text-align : center ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 1% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 1% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 2% ; /* Espace du bas entre le bord et le contenu. */
+
+}
+
+.boutonCentre:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+
+	border : solid 2px ;
+	border-color: #ffffff ;
+	cursor : pointer ;
+}
+
+.boutonBas {
+	width : 87% ;  /* La largeur. */
+	height : 9% ; /*La hauteur.*/
+	border-radius : 30px ;
+	background-color : #56335c ;
+	margin : auto ;
+	margin-top : 3.5% ;
+
+	color : #000000 ; 
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	text-align : center ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 1% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 1% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 2% ; /* Espace du bas entre le bord et le contenu. */
+
+}
+
+.boutonBas:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+
+	border : solid 2px ;
+	border-color: #ffffff ;
+	cursor : pointer ;
+}
+
+
+
+
+
+
+				/* CONTENU COMMUN AUX PAGES */
+
+
+		/* LE MENU */
+
+
+.menuDeroulant { /* Un menu qui rassemble toutes les catégories. */
+	text-transform : uppercase ; /* Les lettres sont toutes en majuscules. */
+	color : white ;
+	font-weight : bold ;
+	font-family: Lato, sans-serif ;
+	display : block ; /* Le texte est affiché sur une même ligne. */
+	cursor : pointer ; /* Le pointeur de la souris change. */
+	pointer-events : none ; /* Il ne se passe rien lorsque la souris n'est pas sur le menu. */
+	position : absolute ;
+	top : 0 ;
+	right : 4px ;
+	margin-top : 1% ;
+}
+.menuDeroulant:hover {
+	pointer-events : all ; /* Quand la souris est sur le menu, les articles sont déroulés. */
+}
+.liste {
+	display : block ; 
+	cursor : pointer ;
+	pointer-events : all ;
+}
+.espace {
+	display : block ; /* L'espace est affiché sur une même ligne. */
+	width : 40px ;  /* La largeur. */
+	margin-left : 15px ;
+	margin-right : 15px ;
+	cursor : pointer ;
+	position : relative ;
+}
+.espace:before {
+	position : absolute ;
+	width : 0% ;
+	transition : width 0.25s ease ; /* L'espace se déroule en 0.25s. */
+	transition-delay : 0.7s ;
+}
+.categories {
+	position : relative ;
+	display : block ;
+	line-height : 2.5 ;
+	margin-right : 30px ;
+	top : 10px ; /* Il y a un écart de 10 pixels entre le haut de l'écran et les categories. */
+	opacity : 0 ;
+	transition : opacity 0.5s ease, top 0.5s ease ;
+	transition-delay : 0 ;
+}
+span {
+	transition : color 0.5s ease ; /* La couleur change en 0.5s. */
+}
+.categories:hover span { /* Quand l'utilisateur survole l'un des articles, la couleur du texte change. */
+	color : #ffffff ;
+}
+.menuDeroulant:hover .espace:before {
+	width : 100% ;  /* La largeur. */
+	transition-delay : 0s ;
+}
+.menuDeroulant:hover .categories { /* Quand la souris est sur les catégories, elles deviennent opaque.*/
+	opacity : 1 ;
+	top : 0px ; /* Les noms des articles montent en haut de l'écran lorsque la souris survole le menuDeroulant. */
+}
+
+.categories:nth-child(1) {
+	transition-delay : 0.45s ;
+}
+.categories:nth-child(2) {
+	transition-delay : 0.4s ;
+}
+.categories:nth-child(3) {
+	transition-delay : 0.35s ;
+}
+.categories:nth-child(4) {
+	transition-delay : 0.3s ;
+}
+.categories:nth-child(5) {
+	transition-delay : 0.25s ;
+}
+.categories:nth-child(6) {
+	transition-delay : 0.2s ;
+}
+.categories:nth-child(7) {
+	transition-delay : 0.15s ;
+}
+.categories:nth-child(8) {
+	transition-delay : 0.1s ;
+}
+.categories:nth-child(9) {
+	transition-delay : 0.05s ;
+}
+.categories:nth-child(10) {
+	transition-delay : 0s ;
+}
+
+/* Temps que les articles mettent pour apparaitre petit à petit quand le curseur est sur le menuDeroulant. */
+
+.menuDeroulant:hover .categories:nth-child(1) {
+	transition-delay: 0.25s ;
+}
+.menuDeroulant:hover .categories:nth-child(2) {
+	transition-delay : 0.3s ;
+}
+.menuDeroulant:hover .categories:nth-child(3) {
+	transition-delay : 0.35s ;
+}
+.menuDeroulant:hover .categories:nth-child(4) {
+	transition-delay : 0.4s ;
+}
+.menuDeroulant:hover .categories:nth-child(5) {
+	transition-delay : 0.45s ;
+}
+.menuDeroulant:hover .categories:nth-child(6) {
+	transition-delay : 0.5s ;
+}
+.menuDeroulant:hover .categories:nth-child(7) {
+	transition-delay : 0.55s ;
+}
+.menuDeroulant:hover .categories:nth-child(8) {
+	transition-delay : 0.6s ;
+}
+.menuDeroulant:hover .categories:nth-child(9) {
+	transition-delay : 0.65s ;
+}
+.menuDeroulant:hover .categories:nth-child(10) {
+	transition-delay : 0.7s ;
+}
+
+
+
+	/* LES LIENS */
+
+#lienBoutton {
+	text-decoration : none ;
+	font-size : 1.5rem ;
+	width : 55% ;  /* La largeur.*/
+	height : 9% ; /*La hauteur.*/
+	margin : auto ;
+	background-color : #000000 ;
+	border-radius : 30px ;
+	padding-top : 1% ;  /* Espace du haut entre le bord et le contenu. */
+}
+
+
+	/* LES TITRES */
+
+#lesTitresPages {
+	font-family : Copperplate gothic ;  /* Ceci est la police du texte "Bienvenue". */
+	font-size : 3.5rem ;  /* Taille du texte. */
+	font-weight : bold ;  /* Le texte est en gras. */
+	color : white ;  /* Le texte est de couleur blanche. */
+	top : 0 ;  /*  */
+	margin-top : 2% ;  /* Le texte se trouve à 2% du haut de l'écran. */
+	margin-left : 25px ;  /* Le texte se trouve à 4% du bord de l'écran. */
+	position : absolute ;  /* Pas trop compris mais c'est utile. */
+	text-align : left ;  /* Cela permet de mettre le texte au centre. */
+}
+
+
+	/* STRUCTURE DES PAGES */
+
+.contenuPage {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 95% ; /*La hauteur.*/
+	margin-top : 2% ;  /* Le texte se trouve à 2% du haut de l'écran. */
+	
+}
+
+.texteContenuPage {
+	/* Le texte : */
+	color : white ;  /* Le texte est de couleur blanche. */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	margin-left : 1% ;
+	padding-top : 1% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	margin-top : 8% ;  /* Le texte se trouve à 2% du haut de l'écran. */
+	text-align : justify ;
+}
+
+
+.cadreHaut {
+	width : 80% ;
+	height : 15% ; /*La hauteur.*/
+	margin-top : 5.5% ;
+	padding-top : 1% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	border-radius : 25px ;
+}
+
+.cadreGauche {
+	width : 37% ;  /* La largeur. */
+	height : 80% ; /*La hauteur.*/
+	margin-top : 3% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+}
+
+
+.cadreDroit {
+	width : 37% ;  /* La largeur. */
+	height : 80% ;  /*La hauteur.*/
+	margin-top : 3% ;
+	margin-bottom : 2% ;
+	margin-left : 48% ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+}
+
+				
+
+	/* PAGE PARCOURS SCOLAIRE */
+
+	#timeline {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		margin: 50px 0;
+		margin-left: 13%;
+		margin-bottom: 3%;
+	}
+
+	.milestone {
+		text-align: center;
+		position: relative;
+		flex: 1;
+	}
+
+	.milestone:not(:last-child)::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: #ffffff;
+		transform: translateY(-50%);
+	}
+
+	.circle {
+		width: 40px;
+		height: 40px;
+		background: hsl(344, 100%, 58%);
+		border-radius: 50%;
+		margin: 0 auto;
+		position: relative;
+		display: flex; /* Pour centrer avec Flexbox */
+		align-items: center; /* Centrage vertical */
+		justify-content: center; /* Centrage horizontal */
+		color: white; /* Couleur du texte */
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.milestone p {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+
+	.year {
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	.rectangleHautWhoAmI {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 20px;
+	}
+
+
+#parcoursRectangleHaut {
+	color : #000000 ; 
+	background-color : #f81946 ; /* Couleur du fond du cercle. */
+	border-radius : 25px ;
+}
+#parcoursRectangleHaut:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+	border-radius : 25px ;
+}
+
+
+#parcoursCadreGauche {
+	color : #000000 ; 
+	background-color : #e13154 ; /* Couleur du fond du cercle. */
+}
+#parcoursCadreGauche:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+#parcoursCadreDroit {
+	color : #000000 ;
+	background-color : #ee5674 ; /* Couleur du fond du cercle. */
+}
+
+#parcoursCadreDroit:hover {
+	background-color : #000000 ; /* Couleur du fond du cercle. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreGaucheCompetences {
+	background-color : #b6364f ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 6% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+}
+
+#carreGaucheCompetences:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreMilieuCompetences {
+	background-color : #b6364f ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 36% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+
+}
+
+#carreMilieuCompetences:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreDroiteCompetences {
+	background-color : #b6364f ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ;  /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 66% ;
+	margin-bottom : 2% ;
+	float : right ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+	
+}
+
+#carreDroiteCompetences:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+.partieSudCarrement {
+	margin-top : 60% ;
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 50% ; /*La hauteur.*/
+	top : 0 ;
+}
+
+.lesCertifs  {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin : 0;
+  background-color: #e0e0e0;
+  float : left ;
+}
+
+.row-wrapper {
+  display: flex;
+  gap: 12%;
+  margin-left: 10.5%;
+  margin-top : 2% ;
+}
+.item-box {
+	background-image : url(../image/pix.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+  	height: 180;
+  	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	border-radius : 25px ;
+  	text-align: center;
+}
+.item-box2 {
+	background-image : url(../image/ateliergpd.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
+.item-box3 {
+	background-image : url(../image/cisco.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
+.item-box4 {
+	background-image : url(../image/secnum.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width: 180;
+	height: 180;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius : 25px ;
+	text-align: center;
+}
+
+.carreBasProjets {
+	background-image : url(../image/fenetreConnexionIHM.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	
+}
+
+
+
+	/* PAGE DE PRESENTATION DE MES PROJETS INFORMATIQUES */
+
+.partieBasseProj {
+	width : 100% ; /* Largeur de la partie haute de la page. */
+	height : 70% ; /*La hauteur.*/
+	top : 0 ;
+}
+
+#carreGaucheProj {
+	background-color : #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 6% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+}
+
+#carreGaucheProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreMilieuProj {
+	background-color :  #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ; /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 36% ;
+	margin-bottom : 2% ;
+	float : left ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+
+}
+
+#carreMilieuProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+#carreDroitProj {
+	background-color : #b69d70 ;
+	color : #000000 ; /* Couleur du texte. */
+	width : 20% ;  /* La largeur. */
+	height : 35% ;  /*La hauteur.*/
+	margin-top : 5% ;
+	margin-left : 66% ;
+	margin-bottom : 2% ;
+	float : right ;
+	border-radius : 25px ;
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 3% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 3% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 1% ;
+	position : absolute ;
+	text-align : left ;
+
+	
+}
+
+#carreDroitProj:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+
+/* Partie du Haut */
+
+.hautPageProjetsInfo {
+	width : 100% ;  /* La largeur. */
+	height : 60% ; /*La hauteur.*/
+	margin-top : 3% ;
+}
+
+/* Cadre pour mettre les captures d'écrans. */
+
+.carreHautProjets {
+	background-image : url(../image/extraitDeCodeIHM.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 27% ;  /* La largeur. */
+	height : 27% ; /*La hauteur.*/
+	margin-top : 11% ;
+	margin-bottom : 2% ;
+	margin-left : 5% ;
+	background-color : #0b787e ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+	position : absolute ;
+}
+
+.carreBasProjets {
+	background-image : url(../image/fenetreConnexionIHM.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 27% ;  /* La largeur. */
+	height : 27% ;  /*La hauteur.*/
+	margin-top : 30% ;
+	margin-bottom : 2% ;
+	margin-left : 5% ; 
+	background-color : #1a7c80 ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+}
+
+/* Texte en haut de page. */
+
+.rectangleDroiteProjets {
+	width : 45% ;  /* La largeur. */
+	height : 65% ;  /*La hauteur.*/
+	margin-top : 11% ;
+	margin-right : 10.5% ;
+	margin-bottom : 2% ;
+	background-color : #b8987e ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : right ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : justify ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.rectangleDroiteProjets:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+
+
+
+
+.milieuPageProjetsInfo {
+	width : 100% ;  /* La largeur. */
+	height : 100% ; /*La hauteur.*/
+	margin-top : 4% ;
+	position : absolute ;
+}
+
+
+/* Images en milieu de page. */
+
+.troisCarres {
+	display : block ;
+	width : 25% ;  /* La largeur. */
+	height : 80% ; /*La hauteur.*/
+	margin-left : 65% ;
+	margin-top : 6% ;
+	float : left ;
+	position : absolute ;
+}
+
+
+.captureSiteM {
+	background-image : url(../image/capturevelo.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 100% ;
+	height : 45% ;
+}
+
+.captureSiteM:hover{
+	background-image : url(../image/extraitCodeVelo.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 100% ;
+	height : 45% ;
+}
+
+
+.captureSiteM2 {
+	background-image : url(../image/espaceConnexion.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 100% ;
+	height : 45% ;
+	margin-top : 20% ;
+}
+
+.captureSiteM2:hover{
+	background-image : url(../image/extraitPhpConnexion.jpg);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 100% ;
+	height : 45% ;
+}
+
+
+.rectangleGaucheProjets {
+	width : 45% ;  /* La largeur. */
+	height : 70% ;  /*La hauteur.*/
+	margin-top : 11% ;
+	margin-left : 7% ; 
+	margin-bottom : 2% ;
+	background-color : #db8f8f ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+	position : absolute ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : justify ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.rectangleGaucheProjets:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+
+.basPageProjetsInfo {
+	width : 100% ; /* La largeur. */
+	height : 120% ; /*La hauteur.*/
+	margin-top : 60% ;
+	position : absolute ;
+}
+
+
+
+.rectangleBasProjets {
+	width : 80% ;  /* La largeur. */
+	height : 45% ;  /*La hauteur.*/
+	margin-top : 11% ;
+	margin-left : 7% ; 
+	margin-bottom : 2% ;
+	background-color : #d3b280 ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	padding-top : 2% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	text-align : justify ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.rectangleBasProjets:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+.quatreCarres {
+	width : 80% ;  /* La largeur. */
+	height : 25% ; /*La hauteur.*/
+	margin-left : 7% ;
+	margin-top : 42% ;
+	position : absolute ;
+}
+
+.stageCaptures {
+	background-image : url(../image/afficheStageFormations.png);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 25% ;  /* La largeur. */
+	height : 85% ; /*La hauteur.*/
+	position : absolute ;
+}
+
+.stageCaptures2 {
+	background-image : url(../image/afficheStageRecrutement.png);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 25% ;  /* La largeur. */
+	height : 85% ; /*La hauteur.*/
+	margin-left : 26.7% ;
+	position : absolute ;
+}
+
+.stageCaptures3 {
+	background-image : url(../image/interfaceOctimeManager.png);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 25% ;  /* La largeur. */
+	height : 85% ; /*La hauteur.*/
+	margin-left : 53.3% ;
+	position : absolute ;
+}
+
+.stageCaptures4 {
+	background-image : url(../image/interfaceOctimeEmploye.png);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	width : 25% ;  /* La largeur. */
+	height : 85% ; /*La hauteur.*/
+	margin-left : 80% ;
+	position : absolute ;
+}
+
+
+.rectangleTexteFormation {
+	width : 75% ;  /* La largeur. */
+	height : 55% ;  /*La hauteur.*/
+	margin-top : 4% ;
+	margin-left : 6% ; 
+	margin-bottom : 2% ;
+	background-color : #8b50cf ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+	position : absolute ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	padding-top : 3% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 3% ;
+	text-align : justify ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.rectangleTexteFormation:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+.rectangleTexteHobby {
+	width : 75% ;  /* La largeur. */
+	height : 57% ;  /*La hauteur.*/
+	margin-top : 2% ;
+	margin-left : 6% ; 
+	margin-bottom : 2% ;
+	background-color : #78265f ; /* Couleur du fond du cercle. */
+	color : #000000 ;
+	float : left ;
+	position : absolute ;
+
+	/* Le texte : */
+	font-family : Candara ;  /* Ceci est la police du texte. */
+	font-size : 1.4rem ;  /* Taille du texte. */
+	padding-top : 3% ;  /* Espace du haut entre le bord et le contenu. */
+	padding-left : 2% ; /* Espace de gauche entre le bord et le contenu. */
+	padding-right : 2% ; /* Espace de droite entre le bord et le contenu. */
+	padding-bottom : 3% ;
+	text-align : justify ;  /* Cela permet de mettre le titre au centre. */
+}
+
+.rectangleTexteHobby:hover {
+	background-color : #000000 ; /* Couleur du fond. */
+	color : white ; /* Couleur du texte. */
+	border : solid 2px ;
+	border-color: #ffffff ;
+}
+
+
+
+
+/* Téléchargement de mon CV en pdf */
+
+#pdf {
+	background-image : url(../image/interfaceOctimeEmploye.png);
+	background-position : center ; /* L'image de fond est centrer. */
+	background-repeat : no-repeat ; /* L'image de fond n'a pas de répétitions. */
+	background-size : cover ; /* L'image de fond recouvre toute la div. */
+	padding: 20px;
+	border: 1px solid #ddd;
+	width: 80%;
+	margin: 20px auto;
+}
+
+
+
+
