@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title> Satellites </title>
+		<script type = "text/javascript" src = "../js/star.js"> </script>
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/veille.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body bgcolor = "black">
+
+		<div class = "menu">
+			<font face = "Lato, sans-serif"> <!-- Menu avec la liste de tous les articles. //-->
+				<div class = "liste"> Menu </div>
+				<div class = "espace"> </div>
+				<div class = "artc" onClick = "accueil()"> <span> Accueil </span> </div>
+				<div class = "artc" onClick = "a1()"> <span> Article 1 </span> </div>
+				<div class = "artc" onClick = "a2()"> <span> Article 2 </span> </div>
+				<div class = "artc" onClick = "a3()"> <span> Article 3 </span> </div>
+				<div class = "artc" onClick = "a4()"> <span> Article 4 </span> </div>
+				<div class = "artc" onClick = "a5()"> <span> Article 5 </span> </div>
+				<div class = "artc" onClick = "a6()"> <span> Article 6 </span> </div>
+				<div class = "artc" onClick = "a7()"> <span> Article 7 </span> </div>
+				<div class = "artc" onClick = "a8()"> <span> Article 8 </span> </div>
+				<div class = "artc" onClick = "a9()"> <span> Article 9 </span> </div>
+                <div class = "artc" onClick = "recap()"> <span> Récapitulatif </span> </div>
+			</font>
+		</div>
+		
+		<div class = "article">
+			<table width = "100%">
+				<tr height = "200" width = "50%">
+					<td>
+						<div class = "titre" title = "Voir l'article" onclick = " window.location.href = 'https://techguru.fr/2024/08/26/comment-leurope-lutte-pour-eviter-les-collisions-spatiales-des-solutions-innovantes-en-action/'; ">
+							<font face = "copperplate gothic">
+								Comment l’Europe lutte pour éviter <br/>
+								les collisions spatiales : des <br/>
+								solutions innovantes en action
+							</font>
+						</div>
+					</td>
+					<td rowspan = "2" align = "center" valign = "top" > <img height = "450" src = "../image/luttecollisioneurope.jpg"/>  </td>
+				</tr>
+				<tr height = "100" width = "50%">
+					<td width = "55%">
+						<p class = "texte" style="text-align:justify" > <font face = "verdana">
+							Afin de prévenir les collisions dans l'espace, un enjeu critique à cause de l'augmentation des débris spatiaux,
+							L'Agence spatiale européenne (ESA) développe des technologies de détection et des logiciels avancés pour
+							surveiller les objets en orbite afin d'éviter les impacts. Parmi les nombreuses initiatives mises en place par
+							l'Europe, des systèmes d'intelligence artificielle sont utilisés pour optimiser les trajectoires
+							des satellites en temps réel.
+							<br/> <br/>
+							Chose qui nécessite une coordination internationale, mais cela est difficile car les acteurs privés et
+							publics doivent partager des données sensibles pour gérer les risques.
+							<br/> <br/>
+							Il est urgent d'agir face à une orbite terrestre de plus en plus encombrée et menaçante pour les infrastructures
+							spatiales essentielles.
+							<br/> <br/>
+						    26/08/2024 - par Julien DONMEZ
+						</font> </p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id = "baspage">
+			<div id = "retour">
+				<img src = "../image/retour.jpg" height = "40" title = "Article précédent" onClick = "a5()"/>
+			</div>
+			<div id = "suivant">
+				<img src = "../image/suivant.jpg" height = "40" title = "Article suivant" onClick = "a7()"/>
+			</div>
+		</div>
+	
+	</body>
+</html>

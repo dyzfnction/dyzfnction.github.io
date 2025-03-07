@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title> Satellites </title>
+		<script type = "text/javascript" src = "../js/star.js"> </script>
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/veille.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body bgcolor = "black">
+	
+		<div class = "menu">
+			<font face = "Lato, sans-serif"> <!-- Menu avec la liste de tous les articles. //-->
+				<div class = "liste"> Menu </div>
+				<div class = "espace"> </div>
+				<div class = "artc" onClick = "accueil()"> <span> Accueil </span> </div>
+				<div class = "artc" onClick = "a1()"> <span> Article 1 </span> </div>
+				<div class = "artc" onClick = "a2()"> <span> Article 2 </span> </div>
+				<div class = "artc" onClick = "a3()"> <span> Article 3 </span> </div>
+				<div class = "artc" onClick = "a4()"> <span> Article 4 </span> </div>
+				<div class = "artc" onClick = "a5()"> <span> Article 5 </span> </div>
+				<div class = "artc" onClick = "a6()"> <span> Article 6 </span> </div>
+				<div class = "artc" onClick = "a7()"> <span> Article 7 </span> </div>
+				<div class = "artc" onClick = "a8()"> <span> Article 8 </span> </div>
+				<div class = "artc" onClick = "a9()"> <span> Article 9 </span> </div>
+                <div class = "artc" onClick = "recap()"> <span> Récapitulatif </span> </div>
+			</font>
+		</div>
+
+		<div class = "article">
+			<table  color = "white" width = "100%" cellspacing = "0">
+				<tr height = "200" width = "50%">
+					<td class = "titre">
+						<div class = "titre" title = "Voir l'article" onclick = " window.location.href = 'https://www.01net.com/actualites/starlink-a-un-probleme-avec-la-loi-en-france.html'; ">
+							<font face = "copperplate gothic">
+								Starlink a un problème avec <br/>
+								la loi en France
+							</font>
+						</div>
+					</td>
+					<td rowspan = "2" align = "center" valign = "top" > <div id = "starlink"> <img height = "400" src = "../image/starlink.jpg"/> </div> </td>
+				</tr>
+				<tr height = "100" width = "50%">
+					<td width = "55%">
+						<p class = "texte" style="text-align:justify" > <font face = "verdana">
+							Le service internet fourni par les satellites Starlink pourrait s'arrêter
+							en France parce qu'il ne respecte pas les obligations légales.
+							<br/> <br/>
+							Les opérateurs chez Starlink doivent obtenir des autorisations ministérielles
+							pour leurs équipements mais Starlink n'a jamais demandé ces autorisations auprès
+							de l'Anssi et il y a aussi un manque de communication entre les autorités
+							judiciaires et Starlink.
+							<br/> <br/>
+							Le dossier de Starlink va être étudié et pour être remis dans les normes,
+							le groupe risque une amende jusqu'à 3% de son chiffre d'affaires ou encore
+							une suspension provisoire ou total de ses services en France.
+							<br/> <br/>
+							27/10/2023 - par Mickaël Bazoge (Source : Emmanuel Paquette)
+						</font> </p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id = "baspage">
+			<div id = "retour">
+				<img src = "../image/retour.jpg" height = "40" title = "Article précédent" onClick = "a3()"/>
+			</div>
+			<div id = "suivant">
+				<img src = "../image/suivant.jpg" height = "40" title = "Page d'accueil" onClick = "a5()"/>
+			</div>
+		</div>
+	
+	</body>
+</html>
