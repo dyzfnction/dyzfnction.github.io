@@ -587,7 +587,7 @@ span {
 }
 #parcoursCadreGauche {
 	color : #ffffff ; 
-	height : 110%;
+	height : 100%;
 	background-color : #e13154 ; /* Couleur du fond du cercle. */
 }
 #parcoursCadreGauche:hover {
@@ -598,7 +598,7 @@ span {
 }
 #parcoursCadreDroit {
 	color : #ffffff ;
-	height : 110%;
+	height : 100%;
 	background-color : #ee5674 ; /* Couleur du fond du cercle. */
 }
 #parcoursCadreDroit:hover {
