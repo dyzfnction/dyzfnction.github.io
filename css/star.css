@@ -555,7 +555,7 @@ span {
 	display: flex; /* Pour centrer avec Flexbox */
 	align-items: center; /* Centrage vertical */
 	justify-content: center; /* Centrage horizontal */
-	color: white; /* Couleur du texte */
+	color: black; /* Couleur du texte */
 	font-size: 14px;
 	font-weight: bold;
 }
