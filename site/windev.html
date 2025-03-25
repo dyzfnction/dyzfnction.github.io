@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title> H✶SHI </title>
+        <script type="text/javascript" src="../js/star.js"></script>  
+        <link type="text/css" rel="stylesheet" media="all" href="../css/star.css" /> 
+    </head>
+
+    <body bgcolor="white">
+        <div class="menuDeroulant">
+            <div class="liste">
+                <img src="../image/loupe.gif" title="Menu" onClick="" height="64" />
+            </div>
+            <div>
+                <div class="espace"> </div>
+                <div class = "categories" onClick = "firstPage()"> <span> Accueil </span> </div>
+                <div class="categories" onClick="quiSuisJe()"> <span> Scolarite </span> </div>
+                <div class="categories" onClick="mesProjets()"> <span> Projets </span> </div>
+                <div class="categories" onClick="projFormation()"> <span> Formation </span> </div>
+                <div class="categories" onClick="accueil()"> <span> Veille </span> </div>
+                <div class="categories" onClick="hobbyPassion()"> <span> Hobby </span> </div>
+            </div>
+        </div>
+
+        <style>
+
+            .page-container-vertical {
+                width: 80%;
+                max-width: 1500px;
+                margin: 5% auto 0 auto; 
+                padding: 20px;
+            }
+
+            .content-vertical {
+                display: flex;
+                gap: 40px;
+            }
+
+            .left-section-vertical {
+                width: 50%;
+                display: flex;
+                flex-direction: row;  /* Aligne les éléments horizontalement */
+                gap: 30px;  /* Espace entre les deux boîtes */
+            }
+
+            .vertical-box {
+                height: 650px;  /* Hauteur des boîtes */
+                width: 60%;  /* Réduit la largeur pour que les deux boîtes s'affichent côte à côte */
+            }
+
+            .vertical-box img {
+                width: 100%;  /* L'image occupe toute la largeur de la boîte */
+                height: 100%;  /* L'image occupe toute la hauteur de la boîte */
+                object-fit: cover;  /* L'image couvre le conteneur sans déformation */
+                border-radius: 15px;  /* Pour garder les coins arrondis */
+            }
+
+            .right-section-vertical {
+                width: 50%;  /* Ajuste la largeur pour l'autre section */
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .large-box-vertical {
+                background-color: black;
+                padding: 20px; /* Ajout d'espace interne pour ne pas coller le texte aux bords */
+                height: auto; /* Permet à la boîte de s'adapter à la taille du texte */
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Aligne le contenu vers le haut de la boîte */
+                border-radius: 15px; /* Coins arrondis */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+            }
+
+            .large-box-vertical .title {
+                font-size: 1.6rem;
+                color: white;
+                font-family: Candara;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px; /* Espace sous le titre */
+                font-weight: bold;
+            }
+
+            .large-box-vertical .content-text {
+                color: white;
+                font-family: Candara;
+                font-size : 1.2rem;
+                text-align: justify; /* Texte justifié */
+                line-height: 1.5; /* Améliore la lisibilité */
+            }
+
+
+
+        </style>
+        
+        <div class="titre-proj"> 
+            Windev -<br/> Stage Informatique
+        </div>
+        
+        <div id="cadredate">
+            Dates : <br/>
+            Janvier - Février 2025
+        </div>
+        
+        <div class="page-container-vertical">
+            <div class="content-vertical">
+                <div class="left-section-vertical">
+                    <div class="vertical-box">
+                        <img src="../image/windevhome.jpg"/>
+                    </div>
+                    <div class="vertical-box">
+                        <img src="../image/windevadd.jpg"/>
+                    </div>
+                </div>
+                <div class="right-section-vertical">
+                    <div class="large-box-vertical">
+                        <div class="title">Description du projet</div>
+                        <div class="content-text">
+                            Mon tuteur m'a mis en charge de la réalisation d'une application sur mobile. Le besoin principal est de recréer une application semblable à celle qu'on possède tous sur nos téléphones "Contacts".
+                            <br/><br/>
+                            Dans cette application, l'utilisateur doit être en mesure d'ajouter des contacts et de voir sa liste de contact se compléter au fur et à mesure des ajouts. Les ajouts peuvent également se faire à l'oral avec un outil capable de détecter la voix de l'utilisateur « speech to text ».  Ainsi, j'ai développé cette application en binôme, mais nous étions chacune sur nos différents postes afin d'ajouter à l'application mobile notre touche personnelle. En termes de visuel, mon tuteur ne nous a pas émis une demande particulière alors nous avions la liberté de choisir le design.
+                            
+                        </div>
+                    </div>
+                    <div class="large-box-vertical">
+                        <div class="title">Bilan et autocritique</div>
+                        <div class="content-text">
+                            J'ai beaucoup apprécié le fait de devoir coder une application android que j'ai ensuite dû installer sur mon téléphone.
+                            Cependant, coder sur un logiciel comme Windev offre beaucoup moins de choix et de liberté en terme de programmation et de
+                            design.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

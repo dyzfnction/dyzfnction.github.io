@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title> Satellites </title>
+		<script type = "text/javascript" src = "../js/star.js"> </script>
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/veille.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body bgcolor = "black"> <!-- Font de page noir. //-->
+
+		<div class = "menu">
+			<font face = "Lato, sans-serif"> <!-- Menu avec la liste de tous les articles. //-->
+				<div class = "liste"> Menu </div>
+				<div class = "espace"> </div>
+				<div class = "artc" onClick = "accueil()"> <span> Accueil </span> </div>
+				<div class = "artc" onClick = "a1()"> <span> Galileo </span> </div>
+				<div class = "artc" onClick = "a2()"> <span> Débris </span> </div>
+				<div class = "artc" onClick = "a3()"> <span> Astrocale </span> </div>
+				<div class = "artc" onClick = "a4()"> <span> Starlink </span> </div>
+				<div class = "artc" onClick = "a5()"> <span> Rise </span> </div>
+				<div class = "artc" onClick = "a6()"> <span> Collision </span> </div>
+				<div class = "artc" onClick = "a7()"> <span> Désintégration </span> </div>
+				<div class = "artc" onClick = "a8()"> <span> Afrique </span> </div>
+				<div class = "artc" onClick = "a9()"> <span> Maroc </span> </div>
+                <div class = "artc" onClick = "recap()"> <span> Récapitulatif </span> </div>
+			</font>
+		</div>
+		
+	
+		<div class = "article">
+			<table width = "100%"> <!-- Le tableau à une largeur de 100%. //-->
+				<tr height = "200" width = "50%"> <!-- La hauteur de la ligne est de 200 et la largeur 50%. //-->
+					<td>
+						<div class = "titre" title = "Voir l'article" onclick = " window.location.href = 'https://www.clubic.com/actualite-506473-mais-pourquoi-l-europe-fait-elle-decoller-ses-satellites-galileo-avec-spacex.html'; ">
+							Mais pourquoi l'Europe </br>
+							fait-elle décoller ses satellites </br>
+							Galileo avec SpaceX ?
+						</div> <!-- Lien vers l'article dans le titre. //-->
+					</td>
+					<td rowspan = "2" align = "center" valign = "top" > <img height = "500" src = "../image/satellite.jpg"/> </td> <!-- Deux ligne ont été fusionnées pour mettre une image. //-->
+				</tr>
+		
+				<tr height = "100" width = "50%">
+					<td width = "55%">
+						<p class = "texte" style="text-align:justify" > <font face = "verdana">
+							28 satellite ont été envoyées entre 2011 et 2021 et aujourd'hui, 23 satellite sont encore actif. 
+							Cependant, les satellites doivent être changés tous les dix ans.
+							</br> </br>
+							Habituellement, l'Europe faisait appel à des fusées de lancement comme
+							Ariane 5 (qui a stoppé son activité à cause de coûts trop élevés) ou bien 
+							Soyouz ST (arrêté à cause des invasions de la Russie en Ukraine ) parce que leurs
+							bases de lancement se situait en Guyane.
+							</br> </br>
+							En premier lieu, Galileo avait été conçu pour ne dépendre d'aucun autre pays mais avec
+							la situation actuelle, l'Europe n'a pas eu d'autre choix que de faire appel à Space X.
+							<br/> <br/>
+							24/10/2023 - par Eric Bottlaender
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id = "baspage"> <!-- Indique le bas de la page. //-->
+			<div id = "retour">
+				<img src = "../image/retour.jpg" height = "40" title = "Page d'accueil" onClick = "accueil()"/>
+			</div>
+			<div id = "suivant"> <!-- Une flèche pour aller vers l'article suivant. //-->
+				<img src = "../image/suivant.jpg" height = "40" title = "Article suivant" onClick = "a2()"/>
+			</div>
+		</div>
+	
+	</body>
+</html>
