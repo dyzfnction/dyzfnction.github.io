@@ -1,0 +1,311 @@
+		/* COMMUN A TOUTES LES PAGES */
+
+
+	/* MENU DU SITE. */
+
+.menu { /* Un menu qui rassemble tous les articles. */
+	text-transform : uppercase ; /* Les lettres sont toutes en majuscules. */
+	color : white ;
+	font-family: Lato, sans-serif ;
+	display : inline-block ; /* Le texte est affiché sur une même ligne. */
+	cursor : pointer ; /* Le pointeur de la souris change. */
+	pointer-events : none ; /* Il ne se passe rien lorsque la souris n'est pas sur le menu. */
+	position : absolute ;
+	top : 0 ;
+	margin-top : 2% ;
+	left : 20px ;
+}
+.menu:hover {
+	pointer-events : all ; /* Quand la souris est sur le menu, les articles sont déroulés. */
+}
+.liste {
+	display : inline-block ; /* Le texte est affiché sur une même ligne. */
+	cursor : pointer ;
+	pointer-events : all ;
+}
+.espace {
+	display : inline-block ; /* L'espace est affiché sur une même ligne. */
+	width : 35px ; /* La largeur de l'espace est de 35 pixels. */
+	margin-left : 15px ;
+	margin-right : 15px ;
+	cursor : pointer ;
+	position : relative ;
+}
+.espace:before {
+	position : absolute ;
+	width : 0% ;
+	transition : width 0.25s ease ; /* L'espace se déroule en 0.25s. */
+	transition-delay : 0.7s ;
+}
+.artc {
+	position : relative ;
+	display : inline-block ;
+	margin-right : 30px ;
+	top : 10px ; /* Il y a un écart de 10 pixels entre le haut de l'écran et les articles. */
+	opacity : 0 ;
+	transition : opacity 0.5s ease, top 0.5s ease ;
+	transition-delay : 0 ;
+}
+span {
+	transition : color 0.5s ease ; /* La couleur change en 0.5s. */
+}
+.artc:hover span { /* Quand l'utilisateur survole l'un des articles, la couleur du texte change. */
+	color : BlanchedAlmond ;
+}
+.menu:hover .espace:before {
+	width : 100% ;
+	transition-delay : 0s ;
+}
+.menu:hover .artc { /* Quand la souris est sur les articles, ils deviennent opaque.*/
+	opacity : 1 ;
+	top : 0px ; /* Les noms des articles montent en haut de l'écran lorsque la souris survole le menu. */
+}
+
+.artc:nth-child(1) {
+	transition-delay : 1.0s ;
+}
+.artc:nth-child(2) {
+	transition-delay : 0.65s ;
+}
+.artc:nth-child(3) {
+	transition-delay : 0.6s ;
+}
+.artc:nth-child(4) {
+	transition-delay : 0.55s ;
+}
+.artc:nth-child(5) {
+	transition-delay : 0.5s ;
+}
+.artc:nth-child(6) {
+	transition-delay : 0.45s ;
+}
+.artc:nth-child(7) {
+	transition-delay : 0.4s ;
+}
+.artc:nth-child(8) {
+	transition-delay : 0.35s ;
+}
+.artc:nth-child(9) {
+	transition-delay : 0.3s ;
+}
+.artc:nth-child(10) {
+	transition-delay : 0.25s ;
+}
+.artc:nth-child(11) {
+	transition-delay : 0.15s ;
+}
+.artc:nth-child(12) {
+	transition-delay : 0.1s ;
+}
+.artc:nth-child(13) {
+	transition-delay : 0.05s ;
+}
+
+
+/* Temps que les articles mettent pour apparaitre petit à petit quand le curseur est sur le menu. */
+
+.menu:hover .artc:nth-child(1) {
+	transition-delay: 0.25s ;
+}
+.menu:hover .artc:nth-child(2) {
+	transition-delay : 0.3s ;
+}
+.menu:hover .artc:nth-child(3) {
+	transition-delay : 0.35s ;
+}
+.menu:hover .artc:nth-child(4) {
+	transition-delay : 0.4s ;
+}
+.menu:hover .artc:nth-child(5) {
+	transition-delay : 0.45s ;
+}
+.menu:hover .artc:nth-child(6) {
+	transition-delay : 0.5s ;
+}
+.menu:hover .artc:nth-child(7) {
+	transition-delay : 0.55s ;
+}
+.menu:hover .artc:nth-child(8) {
+	transition-delay : 0.6s ;
+}
+.menu:hover .artc:nth-child(9) {
+	transition-delay : 0.65s ;
+}
+.menu:hover .artc:nth-child(10) {
+	transition-delay : 0.7s ;
+}
+.menu:hover .artc:nth-child(11) {
+	transition-delay : 0.75s ;
+}
+.menu:hover .artc:nth-child(12) {
+	transition-delay : 0.8s ;
+}
+.menu:hover .artc:nth-child(13) {
+	transition-delay : 0.85s ;
+}
+
+
+	/* BOUTONS DE NAVIGATION */
+
+#baspage {
+	position : absolute ;
+	bottom : 0 ; /* Il n'y a aucun écart avec le bas de la page. */
+	margin-right : 2% ; 
+	margin-left : 2% ;
+	margin-bottom : 1% ;
+}
+
+#suivant {
+	text-align : right ;
+	float : right ;
+	cursor : pointer ;
+}
+	
+#retour {
+	text-align : left ; /* La flèche est alignée à gauche. */
+	float : left ; /* La flèche se trouve à gauche d'une autre div, sur la même ligne. */
+	cursor : pointer ; /* La souris montre qu'on peut cliquer. */
+}
+
+
+
+		/* ACCUEIL VEILLE */
+
+.lune {
+	margin-top : 11% ; /* Il y a un écart de 11% entre le dessus de l'image et la lune. */
+	text-align : center ; /* La lune est centrée. */
+}
+
+#theme {
+	text-align : center ; /* Le texte est aligné au centre de l'écran. */
+	color : white ; /* Le texte est écrit en blanc. */
+	font-family : copperplate gothic ; /* La police du texte est "copperplate gothic" */
+	font-weight : bold ; /* Le texte est en gras. */
+	font-size : 2.2rem ; /* La taille du texte est de 2.2rem. */
+	margin-bottom : 3% ; /* Il y a un écart de 3% entre le nom du thème et les éléments en dessous. */
+}
+
+.case {
+	text-align : center ;
+	font-family : copperplate gothic ; /* La police est */
+	font-size : 1.2rem ; /* La taille du texte dans la case est de 1.2rem. */
+	color : white ; /* Le texte est de couleur blanche. */
+	height : 6% ; /* La hauteur de la case est de 6%. */
+	padding-top : 1em ; /* Il y a un écart d'1em entre le haut de la case et le texte qui se trouve à l'intérieur. */
+	border : 2px solid white ; /* Les bordures de la case sont de 2 pixels et de couleur blanche. */
+	border-radius : 50px ; /* Les bordures de la case sont arrondies. */
+	margin-top : 1% ; /* Il y a un écart d'1% entre la bordure du haut de la case et le contenu à l'extérieur. */
+	margin-left : 30% ; /* Il y a un écart d'30% entre la bordure à gauche de la case et l'extérieur.  */
+	margin-right : 30% ; /* Il y a un écart d'30% entre la bordure à droite de la case et le contenu à l'extérieur. */
+	cursor : pointer ;
+}
+
+
+
+
+
+		/* PAGE D'INTRODUCTION. */
+
+
+#introduction {
+	margin-top : 12% ;
+	margin-left : 5% ;
+	margin-right : 5% ;
+	text-align : center ; 
+	text-justify : auto ; 
+	font-size : 1.1rem ;
+	color : #ffffff ;
+	font-family: verdana ;
+}
+
+#cadre1 { /* Cadre de gauche dans la page d'introduction. */
+	float : left ;
+	text-align : left ;
+	width : 35% ;
+	height : 70% ;
+	background-color : #a4193c ; /* Changement de la couleur de fond du cadre. */
+	margin-left : 5% ;
+}
+
+#cadre2 { /* Cadre de droite dans la page d'introduction. */
+	float : right ;
+	text-align : right ;
+	width : 35% ;
+	height : 70% ;
+	background-color : #5e0a2b ;
+	margin-right : 5% ;
+}
+
+
+
+	/* PAGES D'ARTICLES */
+
+
+.article { /* Tous les articles sont présentés de la même manière. */
+	width : 80% ;
+	margin-top : 5% ;
+	margin-left : 10% ;
+	margin-right : 10% ;
+}
+
+.titre {
+	text-align : left ; /* Titre aligné à gauche. */
+	font-family : copperplate gothic ;
+	font-weight : bold ; /* Ecriture en gras. */
+	font-size : 1.9rem ;
+	color : white ;
+	cursor : pointer ; /* La souris montre qu'on peut cliquer sur le titre. */
+}
+
+.texte {
+	text-align : left ;
+	text-justify : auto ; /* Le texte est justifié, pour que ce soit plus beau, sinon ce n'est pas jolie. */
+	color : white ;
+	font-family: verdana ; /* Police verdana. */
+}
+
+/* .satellite {
+	text-align : center ; L'image du premier satellite est centrée.
+	width : 50% ; La largeur de l'image est de 50%. 
+} */
+
+#starlink {
+	padding-top : 15% ; /* Il y a un écart de 15% entre la bordure du tableau et l'image Starlink. */
+}
+
+#centre { /* Permet de centrer le tableau dans la page du 4 ème article. */
+	margin-left : 5% ;
+	margin-right : 5% ;
+}
+
+
+
+	/* RECAP */
+
+#categorie {
+	text-align : left ; /* Le texte est aligné à gauche. */
+	color : white ;
+	font-family : copperplate gothic ;
+	font-weight : bold ;
+	font-size : 2.2rem ;
+	margin-top : 1% ; /* Il y a un écart d'1% entre le haut de l'écran et le nom des catégories. */
+	margin-left : 2% ; /* Il y a un écart de 2% entre la gauche de l'écran et le nom des catégories. */
+}
+
+#recap{ /*  Texte qui récapitule */
+	padding-left : 5% ;
+	text-align : left ;
+	text-justify : auto ;
+	color : white ;
+	font-family: verdana ;
+}
+
+.lien { /* Pour qu'on voit que les liens sont clicables dans la dernière page.*/
+	text-align : left ;
+	text-justify : auto ;
+	color : white ;
+	font-family: verdana ;
+	cursor : pointer ;
+}
+
+
