@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>H☆SHI</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+        <script src="../js/script.js" defer></script>
+    </head>
+    <body>
+
+        <div class="menu-fixed">
+            <ul>
+              <li><a onclick="accueil()">Accueil</a></li>
+              <li><a onclick="parcours()">Scolarité</a></li>
+              <li><a onclick="projets()">Projet</a></li>
+              <li><a onclick="accueilveille()">Veille</a></li>
+              <li><a onclick="hobby()">Hobby</a></li>
+            </ul>
+          </div>
+
+        <div class="proj-btn">
+            <button onclick="history.back()">Retour</button>
+        </div>
+
+        <div class="proj2-page-container">
+
+            <!-- Section haute -->
+            <section class="proj2-header-section">
+            <div class="proj2-texte-intro">
+                <h1 class="proj2-titre">Nom du projet : Nouvelle Vague [CodeIgniter] </h1>
+                <p class="proj2-dates">Dates : Mars 2025</p>
+            </div>
+
+            <div class="proj2-image-container">
+                <div class="proj2-image-box">
+                <img src="../images/nouvelleVagueBvn.png" alt="Capture projet 1" />
+                </div>
+                <div class="proj2-image-box">
+                <img src="../images/nvinsc.png" alt="Capture projet 2" />
+                </div>
+                <div class="proj2-image-box">
+                <img src="../images/nvform.png" alt="Capture projet 3" />
+                </div>
+            </div>
+            </section>
+
+            <!-- Section basse -->
+            <section class="proj2-contenu-section">
+            <div class="proj2-bloc-texte">
+                <h2 class="proj2-sous-titre">Contexte</h2>
+                <hr class="proj2-separateur" />
+                <p class="proj2-paragraphe">
+                    Le but de cette application web est de permettre aux nouveaux habitants d'une ville fictive "Getcet sur mer" de s'intégrer à la ville à travers des activités proposées par la mairie.
+            </div>
+
+            <div class="proj2-bloc-texte">
+                <h2 class="proj2-sous-titre">Déroulement du projet</h2>
+                <hr class="proj2-separateur" />
+                <p class="proj2-paragraphe">
+                    Sur ce site, les rôles "arrivants" et "mairie" ont la possibilité d'itéragir. <br/><br/>
+
+                            D'un coté, les arrivants peuvent : <br/>
+                            - S'inscrire à des temps forts (ou activités) <br/>
+                            - Modifier leur profil <br/>
+                            - Créer un compléter <br/><br/>
+
+                            Quant à la mairie, elle peut : <br/>
+                            - Gérer des temps fort (Créer, modifier, supprimer) <br/>
+                            - Consulter les statistiques <br/>
+                            - Consulter la liste des inscrits
+                </p>
+            </div>
+
+            <div class="proj2-bloc-texte">
+                <h2 class="proj2-sous-titre">Bilan personnel et autocritique</h2>
+                <hr class="proj2-separateur" />
+                <p class="proj2-paragraphe">
+                    La prise en main de CodeIgniter 4 s'est fait facilement de mon côté. L'appel des fonctions du modèle, l'usage des routes ont facilité et accéléré le codage de l'alication web.
+                </p>
+            </div>
+            </section>
+
+        </div>
+
+        <div class="home-circle" onClick="accueil()">H✶ME</div>
+
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title> Satellites </title>
+		<script type = "text/javascript" src = "../js/script.js"> </script> 
+		<link type = "text/css" rel = "stylesheet" media = "all"  href = "../css/veille.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body bgcolor = "black">
+	
+		<div class = "menu">
+			<font face = "Lato, sans-serif"> <!-- Menu avec la liste de tous les articles. //-->
+				<div class = "liste"> Menu </div>
+				<div class = "espace"> </div>
+				<div class = "artc" onClick = "accueil()"> <span> Accueil </span> </div>
+				<div class = "artc" onClick = "a1()"> <span> Galileo </span> </div>
+				<div class = "artc" onClick = "a2()"> <span> Débris </span> </div>
+				<div class = "artc" onClick = "a3()"> <span> Astrocale </span> </div>
+				<div class = "artc" onClick = "a4()"> <span> Starlink </span> </div>
+				<div class = "artc" onClick = "a5()"> <span> Rise </span> </div>
+				<div class = "artc" onClick = "a6()"> <span> Collision </span> </div>
+				<div class = "artc" onClick = "a7()"> <span> Désintégration </span> </div>
+				<div class = "artc" onClick = "a8()"> <span> Afrique </span> </div>
+				<div class = "artc" onClick = "a9()"> <span> Maroc </span> </div>
+                <div class = "artc" onClick = "recap()"> <span> Récapitulatif </span> </div>
+			</font>
+		</div>
+		
+		<div class = "article">
+			<table width = "150%">
+				<tr height = "200" width = "50%">
+					<td>
+						<div class = "titre" title = "Voir l'article" onclick = " window.location.href = 'https://www.24matins.fr/starlink-risque-de-desintegration-recurrente-de-satellites-au-dessus-de-nous-1379270'; ">
+							<font face = "copperplate gothic">
+								Starlink : Risque de </br>
+								désintégration récurrente de </br>
+								satellites au-dessus de nous ?
+							</font>
+						</div>
+					</td>
+					<td rowspan = "2" align = "center"> <img height = "450" src = "../images/satellitedecomp.gif" style=" float:right; margin-right: 43%; margin-top:5%;"/>  </td>
+				</tr>
+				<tr height = "100" width = "50%">
+					<td width = "35%">
+						<p class = "texte" style="text-align:justify" > <font face = "verdana">
+							Lorsqu'ils rentrent dans l'atmosphère, les satellites Starlink en pleine désintégration
+							présentant un risque pour notre sécurité. Ces satellites, composés principalement
+							d'aluminium, produisent des oxydes nocifs pour la couche d'ozone lors de leur 
+							destruction.
+							<br/><br/>
+							Les mégaconstellations comme Starlink contribuent à 12 % de l'impact global de
+							l'industrie spatiale sur l'ozone, un chiffre en hausse. Avec l'augmentaion prévue 
+							de satellites dans les prochaines années, ces impacts pourraient devenir plus 
+							importants. Cette situation soulève des questions sur la gestion durable des 
+							mégaconstellations spatiales.
+							<br/><br/>
+							28/08/2024 - par Emilie chez 24Matins.fr
+						</font></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id = "baspage">
+			<div id = "retour">
+				<img src = "../images/retour.jpg" height = "40" title = "Article précédent" onClick = "a6()"/>
+			</div>
+			<div id = "suivant">
+				<img src = "../images/suivant.jpg" height = "40" title = "Article suivant" onClick = "a8()"/>
+			</div>
+		</div>
+	
+	</body>
+</html>

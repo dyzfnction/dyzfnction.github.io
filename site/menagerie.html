@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> H☆SHI </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../js/script.js"></script> <!-- relie la page au javascript -->
+    </head>
+    <body>
+
+        <div class="menu-fixed">
+            <ul>
+              <li><a onclick="accueil()">Accueil</a></li>
+              <li><a onclick="parcours()">Scolarité</a></li>
+              <li><a onclick="projets()">Projet</a></li>
+              <li><a onclick="accueilveille()">Veille</a></li>
+              <li><a onclick="hobby()">Hobby</a></li>
+            </ul>
+          </div>
+
+        <div class="proj-btn">
+            <button onclick="history.back()">Retour</button>
+        </div>
+
+        <div class="proj-page-container">
+            <!-- Partie haute : Nom du projet + Dates + 2 images -->
+            <section class="proj-header-section">
+                <div class="proj-texte-intro">
+                <h1 class="proj-titre">Nom du projet : Menagerie [JAVA] </h1>
+                <p class="proj-dates">Dates : Avril 2024 </p>
+                </div>
+                <div class="proj-image-container">
+                <div class="proj-image-box">
+                    <img src="../images/fenetreConnexionIHM.jpg" alt="Capture projet 1" />
+                </div>
+                <div class="proj-image-box">
+                    <img src="../images/extraitDeCodeIHM.jpg" alt="Capture projet 2" />
+                </div>
+                </div>
+            </section>
+
+            <!-- Partie basse : Contexte, déroulement, bilan -->
+            <section class="proj-contenu-section">
+                <div class="proj-bloc-texte">
+                    <h2 class="proj-sous-titre">Contexte</h2>
+                    <hr class="proj-separateur" />
+                    <p class="proj-paragraphe">
+                        En JAVA, j'ai appris à developper à partir du logiciel "Eclipse" en programmation Objet. J'ai eu l'opportunité de manipuler des classes et j'ai été instruit sur un grand nombre de notions tels que : les attributs, les accesseurs, les constructeurs, les méthodes, les collections, la surcharge, la redéfinition d'une classe, l'héritage et j'ai également créer ma propre javadoc à l'issu d'un exercice en classe.
+                    </p>
+                </div>
+                <div class="proj-bloc-texte">
+                    <h2 class="proj-sous-titre">Déroulement du projet</h2>
+                    <hr class="proj-separateur" />
+                    <p class="proj-paragraphe">
+                        Le but du projet Menagerie était donc de gérer une classe mère, une classe fille, une collction et mettre le tout sous forme d'une application déstinée à des utilisateurs comme vous et moi.
+                        <br/><br/>
+                        Ici, la classe mère est la classe Animal, la Ménagerie est une collection permettant de regrouper les animaux et enfin, la classe fille, c'est la classe Félin. Cette classe prend en compte de nouveaux paramètres et le constructeur de la classe animal est redéfini.
+                    </p>
+                </div>
+                <div class="proj-bloc-texte">
+                    <h2 class="proj-sous-titre">Bilan personnel et autocritique</h2>
+                    <hr class="proj-separateur" />
+                    <p class="proj-paragraphe">
+                        Ce projet était intéressant parce que je préfère développer en langage Java, toutefois, je ne savais pas faire d'enchainement de panel donc c'était difficile d'afficher les fenêtres en fonction des intérractions de l'utilisateur avec l'application.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="home-circle" onClick="accueil()">H✶ME</div>
+
+    </body>
+</html>
