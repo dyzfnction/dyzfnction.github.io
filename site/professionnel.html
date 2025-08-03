@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> H☆SHI </title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+        <script src="../js/script.js" defer></script>
+    </head>
+    <body>
+
+      <div class="menu-fixed">
+        <ul>
+          <li><a onclick="accueil()">Accueil</a></li>
+          <li><a onclick="parcours()">Scolarité</a></li>
+          <li><a onclick="projets()">Projets</a></li>
+          <li><a onclick="hobby()">Hobby</a></li>
+        </ul>
+      </div>
+      
+        <section class="professionnel-section">
+            <div class="professionnel-entete">
+              <div class="professionnel-entete-gauche">
+                <h1 class="professionnel-titre">Mes Projets Professionnels</h1>
+                <p class="professionnel-soustitre">Voici un aperçu de mes stages en entreprise réalisés durant ma formation</p>
+              </div>
+              <div class="scolaire-entete-droite">
+                <button class="scolaire-bouton" onclick="projetsScolaires()"> Scolaire </button>
+                <button class="scolaire-bouton" onclick="projets()">Retour</button>
+              </div>
+            </div>
+
+            <div class="professionnel-grid">
+              <div class="professionnel-bloc" onClick="projet8()">
+                <p class="professionnel-label-top">Stage Informatique 2ᵉ année</p>
+                <div class="professionnel-case">
+                  <h2 class="professionnel-case-titre">Stage 2ᵉ année</h2>
+                  <p class="professionnel-case-texte">
+                    Description du stage de deuxième année ici. Tu peux développer avec les missions, les outils utilisés, l’environnement de travail, etc.
+                  </p>
+                </div>
+              </div>
+
+              <div class="professionnel-barre-separation"></div>
+
+              <div class="professionnel-bloc" onClick="projet3()">
+                <p class="professionnel-label-top">Stage Informatique 1ʳᵉ année</p>
+                <div class="professionnel-case">
+                  <h2 class="professionnel-case-titre">Stage 1ʳᵉ année</h2>
+                  <p class="professionnel-case-texte">
+                    Description du stage de première année ici. Tu peux également y inclure les missions confiées, le contexte de l’entreprise et les compétences développées.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </body>
+</html>
