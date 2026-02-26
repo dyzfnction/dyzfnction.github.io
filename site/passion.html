@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Passion — Hoshi</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../images/hoshilogo.png" alt="Hoshi" class="logo-img" onclick="navigate('../site/index.html')" style="cursor:pointer"/></div>
+            <nav class="nav-links">
+                <a href="scolarite.html">Scolarité</a>
+                <a href="projets.html">Projets</a>
+                <a href="passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="back-container">
+            <button onclick="history.back()">← Retour</button>
+        </div>
+        <main class="passion-container">
+            <h1 class="page-title" style="padding-left:0;padding-right:0">Ma <em>passion</em></h1>
+
+            <div class="passion-intro">
+                <p>Le dessin m'accompagne depuis longtemps. Voici quelques inspirations en plus de ma simple imagination :</p>
+                <div class="passion-tags">
+                    <span>@maad_aart</span>
+                    <span>@gyeonnggye</span>
+                    <span>Persona / Hollow Knight</span>
+                    <span>Punpun / Princess Jellyfish / Lazarus</span>
+                </div>
+            </div>
+
+            <div class="passion-galerie" id="galeriePassion">
+                <div class="galerie-item"><img src="../images/blondguy.PNG" alt="Dessin 1"/></div>
+                <div class="galerie-item"><img src="../images/shook.PNG" alt="Dessin 2"/></div>
+                <div class="galerie-item"><img src="../images/ojos.jpg" alt="Dessin 3"/></div>
+                <div class="galerie-item"><img src="../images/flowergirl.PNG" alt="Dessin 4"/></div>
+                <div class="galerie-item"><img src="../images/theeyes.jpg" alt="Dessin 5"/></div>
+                <div class="galerie-item"><img src="../images/arbre.PNG" alt="Dessin 6"/></div>
+                <div class="galerie-item"><img src="../images/rabbit.png" alt="Dessin 7"/></div>
+                <div class="galerie-item"><img src="../images/blondgurl.PNG" alt="Dessin 8"/></div>
+                <div class="galerie-item"><img src="../images/thewings.jpg" alt="Dessin 9"/></div>
+                <div class="galerie-item"><img src="../images/elsa.PNG" alt="Dessin 11"/></div>
+                <div class="galerie-item"><img src="../images/croquis.png" alt="Dessin 12"/></div>
+                <div class="galerie-item"><img src="../images/spiralonface.png" alt="Dessin 13"/></div>
+                <div class="galerie-item"><img src="../images/croquisbroken.png" alt="Dessin 14"/></div>
+                <div class="galerie-item"><img src="../images/brokenhuman.png" alt="Dessin 15"/></div>
+                <div class="galerie-item"><img src="../images/youngman.png" alt="Dessin 16"/></div>
+                <div class="galerie-item"><img src="../images/littlegirl.png" alt="Dessin 17"/></div>
+                <div class="galerie-item"><img src="../images/cryingyoungadulte.png" alt="Dessin 18"/></div>
+                <div class="galerie-item"><img src="../images/uncoloredgurl.png" alt="Dessin 19"/></div>
+                <div class="galerie-item"><img src="../images/coloredepressed.png" alt="Dessin 20"/></div>
+                <div class="galerie-item"><img src="../images/noideabutcute.png" alt="Dessin 21"/></div>
+                <div class="galerie-item"><img src="../images/itriedmybest.png" alt="Dessin 22"/></div>
+                <div class="galerie-item"><img src="../images/shouldvestopearlier.png" alt="Dessin 23"/></div>
+                <div class="galerie-item"><img src="../images/longdarkhair.png" alt="Dessin 24"/></div>
+                <div class="galerie-item"><img src="../images/longhairmale.png" alt="Dessin 25"/></div>
+                <div class="galerie-item"><img src="../images/monstergurl.png" alt="Dessin 26"/></div>
+                <div class="galerie-item"><img src="../images/greygirl.png" alt="Dessin 27"/></div>
+                <div class="galerie-item"><img src="../images/boredrawing.png" alt="Dessin 28"/></div>
+                <div class="galerie-item"><img src="../images/sadman.png" alt="Dessin 29"/></div>
+                <div class="galerie-item"><img src="../images/sadvillager.png" alt="Dessin 30"/></div>
+                <div class="galerie-item"><img src="../images/anotherman.png" alt="Dessin 31"/></div>
+                <div class="galerie-item"><img src="../images/baby.png" alt="Dessin 31"/></div>
+                <div class="galerie-item"><img src="../images/doll.png" alt="Dessin 31"/></div>
+                <div class="galerie-item"><img src="../images/thebob.png" alt="Dessin 31"/></div>
+                <div class="galerie-item"><img src="../images/lpp.png" alt="Dessin 31"/></div>
+                <div class="galerie-item"><img src="../images/hum.png" alt="Dessin 31"/></div>
+            </div>
+
+        </main>
+
+        <!-- LIGHTBOX -->
+        <div class="passion-lightbox" id="passionLb">
+            <button class="plb-close" id="plbClose">✕</button>
+            <button class="plb-prev" id="plbPrev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="plb-inner">
+                <img id="plbImg" src="" alt=""/>
+            </div>
+            <button class="plb-next" id="plbNext">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="plb-counter" id="plbCounter"></div>
+        </div>
+
+        <footer><p>© 2026 — Hoshi</p></footer>
+        <script src="../js/script.js"></script>
+        <script>
+            const galerieItems = [...document.querySelectorAll('.galerie-item')];
+            const galerieImages = galerieItems.map(el => ({
+                src: el.querySelector('img').src,
+                alt: el.querySelector('img').alt
+            }));
+            let plbCur = 0;
+            const lb = document.getElementById('passionLb');
+            const lbImg = document.getElementById('plbImg');
+            const lbCounter = document.getElementById('plbCounter');
+
+            function plbOpen(idx) {
+                plbCur = idx;
+                lbImg.src = galerieImages[plbCur].src;
+                lbImg.alt = galerieImages[plbCur].alt;
+                lbCounter.textContent = (plbCur + 1) + ' / ' + galerieImages.length;
+                lb.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function plbClose() {
+                lb.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            function plbNav(dir) {
+                plbCur = (plbCur + dir + galerieImages.length) % galerieImages.length;
+                lbImg.src = galerieImages[plbCur].src;
+                lbImg.alt = galerieImages[plbCur].alt;
+                lbCounter.textContent = (plbCur + 1) + ' / ' + galerieImages.length;
+            }
+
+            galerieItems.forEach((el, i) => el.addEventListener('click', () => plbOpen(i)));
+            document.getElementById('plbClose').addEventListener('click', (e) => { e.stopPropagation(); plbClose(); });
+            document.getElementById('plbPrev').addEventListener('click', (e) => { e.stopPropagation(); plbNav(-1); });
+            document.getElementById('plbNext').addEventListener('click', (e) => { e.stopPropagation(); plbNav(1); });
+            lb.addEventListener('click', (e) => { if (e.target === lb) plbClose(); });
+            document.addEventListener('keydown', e => {
+                if (!lb.classList.contains('open')) return;
+                if (e.key === 'Escape') plbClose();
+                if (e.key === 'ArrowLeft') plbNav(-1);
+                if (e.key === 'ArrowRight') plbNav(1);
+            });
+        </script>
+
+        <!-- Bouton retour en haut -->
+        <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+        <style>
+            .scroll-top {
+                position: fixed; bottom: 1.8rem; right: 1.8rem; z-index: 400;
+                width: 42px; height: 42px; border-radius: 50%;
+                background: var(--surface); border: 1px solid var(--border2);
+                color: var(--text-sub); cursor: pointer;
+                display: flex; align-items: center; justify-content: center;
+                opacity: 0; transform: translateY(12px);
+                transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, border-color 0.2s ease;
+                pointer-events: none;
+            }
+            .scroll-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+            .scroll-top:hover { background: var(--red-g); border-color: var(--red-l); color: var(--cream); }
+            .scroll-top svg { width: 18px; height: 18px; pointer-events: none; }
+        </style>
+        <script>
+            const scrollBtn = document.getElementById('scrollTop');
+            window.addEventListener('scroll', () => {
+                scrollBtn.classList.toggle('visible', window.scrollY > 300);
+            });
+        </script>
+    </body>
+</html>

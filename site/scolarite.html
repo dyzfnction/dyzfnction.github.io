@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Scolarité — Hoshi</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../images/hoshilogo.png" alt="Hoshi" class="logo-img" onclick="navigate('../site/index.html')" style="cursor:pointer"/></div>
+            <nav class="nav-links">
+                <a href="scolarite.html">Scolarité</a>
+                <a href="projets.html">Projets</a>
+                <a href="passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="back-container">
+            <button onclick="history.back()">← Retour</button>
+        </div>
+        <main>
+            <h1 class="page-title">Ma <em>scolarité</em></h1>
+
+            <section class="frise">
+                <div class="ligne-frise"></div>
+                <div class="cercle">
+                    <div class="niveau">BAC</div>
+                    <div class="filiere">STMG</div>
+                    <div class="dates">2021 – 2023</div>
+                </div>
+                <div class="cercle">
+                    <div class="niveau">BTS</div>
+                    <div class="filiere">SIO</div>
+                    <div class="dates">2023 – 2025</div>
+                </div>
+                <div class="cercle active-cercle">
+                    <div class="niveau">Bachelor</div>
+                    <div class="filiere">Web / Digital</div>
+                    <div class="dates">2025 – 2027</div>
+                </div>
+            </section>
+
+            <section class="competences">
+                <p class="titre-competences">Mes compétences informatiques</p>
+                <div class="rect-competences">
+                    <div class="carre-competence">
+                        <p class="comp-cat">Langages</p>
+                        <ul>
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                            <li>PHP</li><li>Java</li><li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="carre-competence">
+                        <p class="comp-cat">Base de données</p>
+                        <ul><li>SQL</li><li>Merise</li></ul>
+                    </div>
+                    <div class="carre-competence">
+                        <p class="comp-cat">Systèmes</p>
+                        <ul><li>Windows &amp; Linux</li><li>Virtualisation</li></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <p class="titre-certifs">Mes certifications</p>
+                <div class="scolarite-certifs">
+                    <div class="certif-card" onclick="openModal('pix')">
+                        <img src="../images/pix.jpg" alt="PIX"/>
+                        <div class="certif-text">PIX</div>
+                    </div>
+                    <div class="certif-card" onclick="openModal('cisco')">
+                        <img src="../images/cisco.jpg" alt="Cisco"/>
+                        <div class="certif-text">Cisco</div>
+                    </div>
+                    <div class="certif-card" onclick="openModal('rgpd')">
+                        <img src="../images/ateliergpd.jpg" alt="Atelier RGPD"/>
+                        <div class="certif-text">Atelier RGPD</div>
+                    </div>
+                    <div class="certif-card" onclick="openModal('secnum')">
+                        <img src="../images/secnum.jpg" alt="SecNum"/>
+                        <div class="certif-text">SecNum Académie</div>
+                    </div>
+                    <div class="certif-card" onclick="openModal('slhtml')">
+                        <img src="../images/sololearnhtml.jpg" alt="Sololearn HTML"/>
+                        <div class="certif-text">Sololearn HTML</div>
+                    </div>
+                    <div class="certif-card" onclick="openModal('slsql')">
+                        <img src="../images/sololearnsql.jpg" alt="Sololearn SQL"/>
+                        <div class="certif-text">Sololearn SQL</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- MODAL : image gauche (carré) + texte droite (même hauteur) -->
+        <div class="certif-modal-overlay" id="certifModal" onclick="closeModal(event)">
+            <div class="certif-modal">
+                <button class="certif-modal-close" onclick="closeModal()">✕</button>
+                <div class="certif-modal-img-wrap">
+                    <img class="certif-modal-img" id="modalImg" src="" alt=""/>
+                </div>
+                <div class="certif-modal-body">
+                    <div class="certif-modal-tag" id="modalTag"></div>
+                    <h2 class="certif-modal-title" id="modalTitle"></h2>
+                    <p class="certif-modal-desc" id="modalDesc"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer><p>© 2026 — Hoshi</p></footer>
+        <script src="../js/script.js"></script>
+        <script>
+            const certifData = {
+                pix: {
+                    title: "Certification PIX",
+                    tag: "Compétences numériques",
+                    img: "../images/pix.jpg",
+                    desc: "PIX est la plateforme nationale d'évaluation des compétences numériques. Elle mesure 16 compétences réparties en 5 domaines : information & données, communication & collaboration, création de contenu, protection & sécurité, environnement numérique. Reconnue par l'Éducation Nationale et demandée dans le monde professionnel."
+                },
+                cisco: {
+                    title: "Certification Cisco",
+                    tag: "Réseaux & Infrastructure",
+                    img: "../images/cisco.jpg",
+                    desc: "Certification délivrée par Cisco dans le cadre du programme Cisco Networking Academy. Elle valide des compétences fondamentales en réseaux : protocoles TCP/IP, configuration de routeurs et switches, sécurité réseau de base et dépannage d'infrastructures. Référence mondiale dans le domaine des réseaux."
+                },
+                rgpd: {
+                    title: "Atelier RGPD — CNIL",
+                    tag: "Droit numérique",
+                    img: "../images/ateliergpd.jpg",
+                    desc: "Formation proposée par la CNIL couvrant les principes fondamentaux du Règlement Général sur la Protection des Données : droits des personnes, obligations des organismes, bases légales du traitement, et bonnes pratiques pour la conformité en entreprise."
+                },
+                secnum: {
+                    title: "SecNum Académie — ANSSI",
+                    tag: "Cybersécurité",
+                    img: "../images/secnum.jpg",
+                    desc: "Programme de l'ANSSI abordant les menaces du quotidien, les bonnes pratiques de cyberhygiène, la gestion des mots de passe, les risques liés au phishing et à l'ingénierie sociale. Une formation de référence pour la sécurité numérique."
+                },
+                slhtml: {
+                    title: "Sololearn — HTML",
+                    tag: "Développement web",
+                    img: "../images/sololearnhtml.jpg",
+                    desc: "Certification Sololearn validant la maîtrise des fondamentaux HTML : structure d'une page, balises sémantiques, formulaires, tableaux et intégration de médias. Base essentielle du développement web front-end."
+                },
+                slsql: {
+                    title: "Sololearn — SQL",
+                    tag: "Base de données",
+                    img: "../images/sololearnsql.jpg",
+                    desc: "Certification Sololearn couvrant les requêtes SQL (SELECT, INSERT, UPDATE, DELETE), les jointures, les fonctions d'agrégation, les sous-requêtes et la gestion de bases de données relationnelles."
+                }
+            };
+
+            function openModal(id) {
+                const d = certifData[id]; if (!d) return;
+                document.getElementById('modalImg').src = d.img;
+                document.getElementById('modalImg').alt = d.title;
+                document.getElementById('modalTag').textContent = d.tag;
+                document.getElementById('modalTitle').textContent = d.title;
+                document.getElementById('modalDesc').textContent = d.desc;
+                document.getElementById('certifModal').classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeModal(e) {
+                if (e && e.target !== document.getElementById('certifModal') && !e.target.classList.contains('certif-modal-close')) return;
+                document.getElementById('certifModal').classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') { document.getElementById('certifModal').classList.remove('open'); document.body.style.overflow = ''; }
+            });
+        </script>
+    </body>
+</html>

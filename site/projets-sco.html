@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Projets scolaires — Hoshi</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../images/hoshilogo.png" alt="Hoshi" class="logo-img" onclick="navigate('../site/index.html')" style="cursor:pointer"/></div>
+            <nav class="nav-links">
+                <a href="scolarite.html">Scolarité</a>
+                <a href="projets.html">Projets</a>
+                <a href="passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="back-container">
+            <button onclick="history.back()">← Retour</button>
+        </div>
+        <main class="projetsco-container">
+            <h1 class="page-title">Projets <em>scolaires</em></h1>
+            <div class="projetsco-slider-wrapper">
+                <div class="projetsco-slider-container">
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/Chapitre_1.png" alt="NWA 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/Chapitre2.png" alt="NWA 2"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/Chapitre3.png" alt="NWA 3"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/Chapitre4.png" alt="NWA 4"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/Chapitre5.png" alt="NWA 5"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/SnapbackCompton.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/Hoodie.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/TshirtFinalTour.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/VinyleV1.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/VinyleV2.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/poster.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/pack.png" alt=""/></div>
+                                <div class="projetsco-imgbox"><img src="../images/packC.png" alt=""/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Outspoken Tour | Oct – Déc 2025</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Site immersif<br/>
+                                    <strong>Outils :</strong> Figma, Photoshop, Illustrator, InDesign<br/>
+                                    <strong>Mission :</strong> Créer un site immersif en <strong>groupe (3 personnes)</strong><br/><br/>
+                                    Création d'un site immersif pour une réunification fictive du groupe NWA en hommage à Eazy-E. J'ai réalisé les icônes chronologiques, le merchandising fictif, le montage vidéo et les tests utilisateurs.<br/>
+                                    <strong>Difficultés :</strong> Coordination à distance, recherche d'archives<br/>
+                                    <strong>Points positifs :</strong> Sujet passionnant, résultat conforme aux attentes<br/>
+                                    <strong>Lien :</strong> <a href="https://mamazorus.github.io/NWA/" target="_blank">Voir le site</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/nouvelleVagueBvn.png" alt="Nouvelle Vague 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/nvform.png" alt="Nouvelle Vague 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Nouvelle Vague | Mars 2025</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Initiation à CodeIgniter<br/>
+                                    <strong>Support :</strong> Structure CodeIgniter<br/>
+                                    <strong>Mission :</strong> Créer une application en <strong>binôme</strong><br/><br/>
+                                    Application pour intégrer de nouveaux habitants dans une ville fictive via des activités organisées par la mairie. J'ai développé le rôle des arrivants : création de compte, modification du profil et inscription aux activités.<br/>
+                                    <strong>Difficultés :</strong> Écart de niveau, répartition inégale<br/>
+                                    <strong>Points positifs :</strong> Bonne cohésion, prise en main rapide de CodeIgniter
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/bvnfripouille.png" alt="Fripouille 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/ajoutfripouille.png" alt="Fripouille 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Fripouille | Janvier 2025</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Prise en main MVC<br/>
+                                    <strong>Langage :</strong> Java<br/>
+                                    <strong>Mission :</strong> Créer une application en <strong>binôme</strong><br/><br/>
+                                    Application de gestion de dons de vêtements avec 3 rôles : Maire, Secrétaire et Bénévole. Les utilisateurs consultent et alimentent les catalogues et statistiques de ventes.<br/>
+                                    <strong>Difficultés :</strong> Gestion du temps, maîtrise du MVC<br/>
+                                    <strong>Points positifs :</strong> Répartition équitable, bonne communication via Trello
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/bvnsio2jeux.png" alt="Sio2Jeux 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/encorecodesio2jeux.png" alt="Sio2Jeux 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Sio2Jeux | Novembre 2024</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Gestion base de données<br/>
+                                    <strong>Langage :</strong> Java<br/>
+                                    <strong>Mission :</strong> Créer une application <strong>individuellement</strong><br/><br/>
+                                    Bibliothèque de jeux vidéo permettant d'ajouter, modifier, supprimer et rechercher des jeux, avec informations sur l'éditeur, plateformes, catégorie et prix.<br/>
+                                    <strong>Difficultés :</strong> Gestion du temps, organisation du code<br/>
+                                    <strong>Points positifs :</strong> Bonne maîtrise du MVC en Java
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/accueilepisol.png" alt="Getcet 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/epimaud.png" alt="Getcet 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Getcet | Octobre 2024</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Prise en main MVC<br/>
+                                    <strong>Langage :</strong> PHP<br/>
+                                    <strong>Mission :</strong> Modifier un site existant en <strong>binôme</strong><br/><br/>
+                                    Adaptation d'un site pour vendre et acheter des produits abordables. J'ai développé le rôle d'acheteur : passer des commandes, consulter le catalogue et ses achats.<br/>
+                                    <strong>Difficultés :</strong> S'approprier un code existant<br/>
+                                    <strong>Points positifs :</strong> Gain de temps grâce à la structure existante
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/fenetreConnexionIHM.jpg" alt="Menagerie 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/extraitDeCodeIHM.jpg" alt="Menagerie 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Menagerie | Avril 2024</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Initiation à l'IHM<br/>
+                                    <strong>Langage :</strong> Java<br/>
+                                    <strong>Mission :</strong> Créer une application <strong>individuellement</strong><br/><br/>
+                                    Gestion d'une ménagerie : ajout, suppression et recherche d'animaux. Familiarisation avec classes, héritage et collections.<br/>
+                                    <strong>Difficultés :</strong> Deadline, placement des fonctions<br/>
+                                    <strong>Points positifs :</strong> Apprentissage rapide par la pratique
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/capturevelo.jpg" alt="Site Marchand 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/cowboyveloo.jpg" alt="Site Marchand 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Site Marchand | Nov – Déc 2023</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Initiation au codage<br/>
+                                    <strong>Langages :</strong> HTML, PHP, CSS, JavaScript<br/>
+                                    <strong>Mission :</strong> Créer un site vitrine <strong>binôme puis individuel</strong><br/><br/>
+                                    Création d'un site de vente de vélos électriques pour se familiariser avec les sites marchands et différents langages.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/vtcap1.jpg" alt="VT 1"/></div>
+                                <div class="projetsco-imgbox"><img src="../images/vtcap2.jpg" alt="VT 2"/></div>
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Veille Technologique | Oct 2023 – Jan 2025</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Veille informatique<br/>
+                                    <strong>Support :</strong> Recherches internet<br/>
+                                    <strong>Mission :</strong> Rechercher des informations sur un sujet <strong>individuellement</strong><br/><br/>
+                                    Veille sur les satellites via Google Alertes et articles en ligne, en lien avec mon prénom "Hoshi".<br/>
+                                    <strong>Difficultés :</strong> Choisir et trier les informations<br/>
+                                    <strong>Points positifs :</strong> Sujet passionnant et motivant
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetsco-slide">
+                        <div class="projetsco-project portrait-img">
+                            <div class="projetsco-images" data-carousel>
+                                <div class="projetsco-imgbox active"><img src="../images/clavier.png" alt="Clavier"/></div>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetsco-description">
+                                <h2 class="projetsco-project-name">Clavier | Octobre 2023</h2>
+                                <p class="projetsco-project-text">
+                                    <strong>Contexte :</strong> Exposé<br/>
+                                    <strong>Support :</strong> Recherches internet, Canva<br/>
+                                    <strong>Mission :</strong> Expliquer les composants d'un clavier <strong>individuellement</strong><br/><br/>
+                                    Recherche et synthèse d'informations sur les claviers mécaniques, création d'une affiche avec Canva pour accompagner la présentation orale.<br/>
+                                    <strong>Difficultés :</strong> Synthèse des informations<br/>
+                                    <strong>Points positifs :</strong> Recherches rapides et support efficace
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </main>
+
+    <!-- LIGHTBOX -->
+    <div class="img-lightbox-overlay" id="imgLightbox">
+        <button class="img-lightbox-close" id="lbClose">✕</button>
+        <button class="img-lightbox-prev" id="lbPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="img-lightbox-inner">
+            <img id="lightboxImg" src="" alt=""/>
+        </div>
+        <button class="img-lightbox-next" id="lbNext">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="img-lightbox-counter" id="lbCounter"></div>
+    </div>
+
+        <footer><p>© 2026 — Hoshi</p></footer>
+        <script src="../js/script.js"></script>
+        <script>
+            document.querySelectorAll('[data-carousel]').forEach(initProjCarousel);
+
+            function initProjCarousel(container) {
+                const boxes = [...container.querySelectorAll('.projetsco-imgbox, .projetspro-imgbox')];
+                const dotsWrap = container.querySelector('.proj-carousel-dots');
+                if (boxes.length <= 1) {
+                    container.querySelectorAll('.proj-carousel-btn').forEach(b => b.style.display = 'none');
+                    return;
+                }
+                boxes.forEach((_, i) => {
+                    const d = document.createElement('button');
+                    d.className = 'proj-carousel-dot' + (i === 0 ? ' active' : '');
+                    d.onclick = () => goProj(container, i);
+                    dotsWrap.appendChild(d);
+                });
+                container._cur = 0;
+            }
+
+            function projCarousel(btn, dir) {
+                const c = btn.closest('[data-carousel]');
+                const boxes = [...c.querySelectorAll('.projetsco-imgbox, .projetspro-imgbox')];
+                const dots = [...c.querySelectorAll('.proj-carousel-dot')];
+                let cur = c._cur || 0;
+                boxes[cur].classList.remove('active');
+                if (dots[cur]) dots[cur].classList.remove('active');
+                cur = (cur + dir + boxes.length) % boxes.length;
+                boxes[cur].classList.add('active');
+                if (dots[cur]) dots[cur].classList.add('active');
+                c._cur = cur;
+            }
+
+            function goProj(container, idx) {
+                const boxes = [...container.querySelectorAll('.projetsco-imgbox, .projetspro-imgbox')];
+                const dots = [...container.querySelectorAll('.proj-carousel-dot')];
+                let cur = container._cur || 0;
+                boxes[cur].classList.remove('active');
+                if (dots[cur]) dots[cur].classList.remove('active');
+                boxes[idx].classList.add('active');
+                if (dots[idx]) dots[idx].classList.add('active');
+                container._cur = idx;
+            }
+        
+
+        // ── LIGHTBOX avec navigation ──────────────────────────────
+        let _lbImages = [];   // liste des src de toutes les images du carousel courant
+        let _lbIndex  = 0;    // index actuellement affiché dans la lightbox
+
+        function openLightbox(container) {
+            // Récupère toutes les images du carousel de ce projet
+            const boxes = [...container.querySelectorAll('.projetsco-imgbox, .projetspro-imgbox')];
+            _lbImages = boxes.map(b => ({ src: b.querySelector('img').src, alt: b.querySelector('img').alt }));
+            // L'image courante = celle dont l'imgbox a la classe .active
+            _lbIndex = boxes.findIndex(b => b.classList.contains('active'));
+            if (_lbIndex < 0) _lbIndex = 0;
+
+            const overlay = document.getElementById('imgLightbox');
+            overlay.classList.toggle('has-nav', _lbImages.length > 1);
+            updateLightboxImage();
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateLightboxImage() {
+            const img = document.getElementById('lightboxImg');
+            img.src = _lbImages[_lbIndex].src;
+            img.alt = _lbImages[_lbIndex].alt;
+            const counter = document.getElementById('lbCounter');
+            if (_lbImages.length > 1) {
+                counter.textContent = (_lbIndex + 1) + ' / ' + _lbImages.length;
+            } else {
+                counter.textContent = '';
+            }
+        }
+
+        function closeLightbox(e) {
+            if (e && e.type === 'click') {
+                // Ferme seulement si clic sur l'overlay lui-même, le bouton close, ou Échap
+                const t = e.target;
+                if (t !== document.getElementById('imgLightbox') &&
+                    t.id !== 'lbClose' && !t.closest('#lbClose')) return;
+            }
+            document.getElementById('imgLightbox').classList.remove('open', 'has-nav');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('imgLightbox').addEventListener('click', closeLightbox);
+        document.getElementById('lbClose').addEventListener('click', () => {
+            document.getElementById('imgLightbox').classList.remove('open', 'has-nav');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('lbPrev').addEventListener('click', (e) => {
+            e.stopPropagation();
+            _lbIndex = (_lbIndex - 1 + _lbImages.length) % _lbImages.length;
+            updateLightboxImage();
+        });
+        document.getElementById('lbNext').addEventListener('click', (e) => {
+            e.stopPropagation();
+            _lbIndex = (_lbIndex + 1) % _lbImages.length;
+            updateLightboxImage();
+        });
+        document.addEventListener('keydown', e => {
+            const lb = document.getElementById('imgLightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'Escape') { lb.classList.remove('open', 'has-nav'); document.body.style.overflow = ''; }
+            if (e.key === 'ArrowLeft' && _lbImages.length > 1) { _lbIndex = (_lbIndex - 1 + _lbImages.length) % _lbImages.length; updateLightboxImage(); }
+            if (e.key === 'ArrowRight' && _lbImages.length > 1) { _lbIndex = (_lbIndex + 1) % _lbImages.length; updateLightboxImage(); }
+        });
+
+        // Clic sur la vignette → ouvre la lightbox sur l'image active du carousel
+        document.querySelectorAll('[data-carousel]').forEach(container => {
+            container.addEventListener('click', (e) => {
+                // N'ouvre pas si on a cliqué sur une flèche ou un dot
+                if (e.target.closest('.proj-carousel-btn') || e.target.closest('.proj-carousel-dot')) return;
+                if (e.target.tagName === 'IMG' || e.target.closest('.projetsco-imgbox, .projetspro-imgbox')) {
+                    e.stopPropagation();
+                    openLightbox(container);
+                }
+            });
+        });
+        // ──────────────────────────────────────────────────────────
+
+    </script>
+    </body>
+</html>

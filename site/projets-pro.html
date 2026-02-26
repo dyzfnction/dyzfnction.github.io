@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Projets professionnels — Hoshi</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../images/hoshilogo.png" alt="Hoshi" class="logo-img" onclick="navigate('../site/index.html')" style="cursor:pointer"/></div>
+            <nav class="nav-links">
+                <a href="scolarite.html">Scolarité</a>
+                <a href="projets.html">Projets</a>
+                <a href="passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="back-container">
+            <button onclick="history.back()">← Retour</button>
+        </div>
+        <main class="projetpro-container">
+            <h1 class="page-title">Projets <em>professionnels</em></h1>
+            <div class="projetspro-slider-wrapper">
+                <div class="projetspro-slider-container">
+
+                    <article class="projetspro-slide">
+                        <div class="projetspro-project portrait-img">
+                            <div class="projetspro-images" data-carousel>
+                                <div class="projetspro-imgbox active"><img src="../images/windevhome.jpg" alt="WinDev"/></div>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetspro-description">
+                                <h2 class="projetspro-project-name">WinDev | Janv – Fév 2025</h2>
+                                <p class="projetspro-project-text">
+                                    Stage court orienté sur le développement web et mobile.<br/>
+                                    J'ai réalisé une application mobile de type « Contacts », design libre, ce qui m'a permis d'expérimenter différentes approches visuelles.<br/><br/>
+                                    <strong>Points positifs :</strong><br/>
+                                    - Apprentissage autonome et rapide<br/>
+                                    - Liberté créative plus grande qu'en classe<br/><br/>
+                                    <strong>Points à améliorer :</strong><br/>
+                                    - Suivi limité par le tuteur<br/>
+                                    - Peu de mises en situation réelles
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projetspro-slide">
+                        <div class="projetspro-project">
+                            <div class="projetspro-images" data-carousel>
+                                <div class="projetspro-imgbox active"><img src="../images/afficheStageFormations.png" alt="Octime 1"/></div>
+                                <div class="projetspro-imgbox"><img src="../images/interfaceOctimeEmploye.png" alt="Octime 2"/></div>
+                                <div class="projetspro-imgbox"><img src="../images/tutoOctime1.png" alt="tuto"/></div>
+                                <div class="projetspro-imgbox"><img src="../images/tutoOctime2.png" alt="tuto 2"/></div>
+
+                                <button class="proj-carousel-btn prev" onclick="event.stopPropagation(); projCarousel(this,-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                                <button class="proj-carousel-btn next" onclick="event.stopPropagation(); projCarousel(this,1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                                <div class="proj-carousel-dots"></div>
+                            </div>
+                            <div class="projetspro-description">
+                                <h2 class="projetspro-project-name">Octime Web | Mai – Juin 2024</h2>
+                                <p class="projetspro-project-text">
+                                    Stage à l'Hôpital privé d'Évry-Courcouronnes, gestion des accès au logiciel OCTIME Web pour tous les salariés.<br/>
+                                    J'ai mis à jour les matricules, formé le personnel et simplifié la gestion du temps de travail.<br/>
+                                    J'ai également conçu des affiches de recrutement et de sensibilisation à la cybersécurité.<br/>
+                                    Seules des captures anonymisées sont présentées pour respecter la confidentialité.<br/><br/>
+                                    <strong>Points positifs :</strong><br/>
+                                    - Expérience concrète sur un logiciel professionnel<br/>
+                                    - Impact direct sur l'organisation interne<br/><br/>
+                                    <strong>Points à améliorer :</strong><br/>
+                                    - Certaines missions manquaient de suivi détaillé
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </main>
+
+    <!-- LIGHTBOX -->
+    <div class="img-lightbox-overlay" id="imgLightbox">
+        <button class="img-lightbox-close" id="lbClose">✕</button>
+        <button class="img-lightbox-prev" id="lbPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="img-lightbox-inner">
+            <img id="lightboxImg" src="" alt=""/>
+        </div>
+        <button class="img-lightbox-next" id="lbNext">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="img-lightbox-counter" id="lbCounter"></div>
+    </div>
+
+        <footer><p>© 2026 — Hoshi</p></footer>
+        <script src="../js/script.js"></script>
+        <script>
+            document.querySelectorAll('[data-carousel]').forEach(initProjCarousel);
+
+            function initProjCarousel(container) {
+                const boxes = [...container.querySelectorAll('.projetspro-imgbox, .projetsco-imgbox')];
+                const dotsWrap = container.querySelector('.proj-carousel-dots');
+                if (boxes.length <= 1) {
+                    container.querySelectorAll('.proj-carousel-btn').forEach(b => b.style.display = 'none');
+                    return;
+                }
+                boxes.forEach((_, i) => {
+                    const d = document.createElement('button');
+                    d.className = 'proj-carousel-dot' + (i === 0 ? ' active' : '');
+                    d.onclick = () => goProj(container, i);
+                    dotsWrap.appendChild(d);
+                });
+                container._cur = 0;
+            }
+
+            function projCarousel(btn, dir) {
+                const c = btn.closest('[data-carousel]');
+                const boxes = [...c.querySelectorAll('.projetspro-imgbox, .projetsco-imgbox')];
+                const dots = [...c.querySelectorAll('.proj-carousel-dot')];
+                let cur = c._cur || 0;
+                boxes[cur].classList.remove('active');
+                if (dots[cur]) dots[cur].classList.remove('active');
+                cur = (cur + dir + boxes.length) % boxes.length;
+                boxes[cur].classList.add('active');
+                if (dots[cur]) dots[cur].classList.add('active');
+                c._cur = cur;
+            }
+
+            function goProj(container, idx) {
+                const boxes = [...container.querySelectorAll('.projetspro-imgbox, .projetsco-imgbox')];
+                const dots = [...container.querySelectorAll('.proj-carousel-dot')];
+                let cur = container._cur || 0;
+                boxes[cur].classList.remove('active');
+                if (dots[cur]) dots[cur].classList.remove('active');
+                boxes[idx].classList.add('active');
+                if (dots[idx]) dots[idx].classList.add('active');
+                container._cur = idx;
+            }
+        
+
+        // ── LIGHTBOX avec navigation ──────────────────────────────
+        let _lbImages = [];   // liste des src de toutes les images du carousel courant
+        let _lbIndex  = 0;    // index actuellement affiché dans la lightbox
+
+        function openLightbox(container) {
+            // Récupère toutes les images du carousel de ce projet
+            const boxes = [...container.querySelectorAll('.projetsco-imgbox, .projetspro-imgbox')];
+            _lbImages = boxes.map(b => ({ src: b.querySelector('img').src, alt: b.querySelector('img').alt }));
+            // L'image courante = celle dont l'imgbox a la classe .active
+            _lbIndex = boxes.findIndex(b => b.classList.contains('active'));
+            if (_lbIndex < 0) _lbIndex = 0;
+
+            const overlay = document.getElementById('imgLightbox');
+            overlay.classList.toggle('has-nav', _lbImages.length > 1);
+            updateLightboxImage();
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateLightboxImage() {
+            const img = document.getElementById('lightboxImg');
+            img.src = _lbImages[_lbIndex].src;
+            img.alt = _lbImages[_lbIndex].alt;
+            const counter = document.getElementById('lbCounter');
+            if (_lbImages.length > 1) {
+                counter.textContent = (_lbIndex + 1) + ' / ' + _lbImages.length;
+            } else {
+                counter.textContent = '';
+            }
+        }
+
+        function closeLightbox(e) {
+            if (e && e.type === 'click') {
+                // Ferme seulement si clic sur l'overlay lui-même, le bouton close, ou Échap
+                const t = e.target;
+                if (t !== document.getElementById('imgLightbox') &&
+                    t.id !== 'lbClose' && !t.closest('#lbClose')) return;
+            }
+            document.getElementById('imgLightbox').classList.remove('open', 'has-nav');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('imgLightbox').addEventListener('click', closeLightbox);
+        document.getElementById('lbClose').addEventListener('click', () => {
+            document.getElementById('imgLightbox').classList.remove('open', 'has-nav');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('lbPrev').addEventListener('click', (e) => {
+            e.stopPropagation();
+            _lbIndex = (_lbIndex - 1 + _lbImages.length) % _lbImages.length;
+            updateLightboxImage();
+        });
+        document.getElementById('lbNext').addEventListener('click', (e) => {
+            e.stopPropagation();
+            _lbIndex = (_lbIndex + 1) % _lbImages.length;
+            updateLightboxImage();
+        });
+        document.addEventListener('keydown', e => {
+            const lb = document.getElementById('imgLightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'Escape') { lb.classList.remove('open', 'has-nav'); document.body.style.overflow = ''; }
+            if (e.key === 'ArrowLeft' && _lbImages.length > 1) { _lbIndex = (_lbIndex - 1 + _lbImages.length) % _lbImages.length; updateLightboxImage(); }
+            if (e.key === 'ArrowRight' && _lbImages.length > 1) { _lbIndex = (_lbIndex + 1) % _lbImages.length; updateLightboxImage(); }
+        });
+
+        // Clic sur la vignette → ouvre la lightbox sur l'image active du carousel
+        document.querySelectorAll('[data-carousel]').forEach(container => {
+            container.addEventListener('click', (e) => {
+                // N'ouvre pas si on a cliqué sur une flèche ou un dot
+                if (e.target.closest('.proj-carousel-btn') || e.target.closest('.proj-carousel-dot')) return;
+                if (e.target.tagName === 'IMG' || e.target.closest('.projetsco-imgbox, .projetspro-imgbox')) {
+                    e.stopPropagation();
+                    openLightbox(container);
+                }
+            });
+        });
+        // ──────────────────────────────────────────────────────────
+
+    </script>
+    </body>
+</html>

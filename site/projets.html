@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Projets — Hoshi</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../images/hoshilogo.png" alt="Hoshi" class="logo-img" onclick="navigate('../site/index.html')" style="cursor:pointer"/></div>
+            <nav class="nav-links">
+                <a href="scolarite.html">Scolarité</a>
+                <a href="projets.html">Projets</a>
+                <a href="passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="back-container">
+            <button onclick="history.back()">← Retour</button>
+        </div>
+        <main>
+            <h1 class="page-title">Mes <em>projets</em></h1>
+
+            <section class="projets-cards-section">
+                <div class="projets-cards-inner">
+                    <div class="projet-big-card" onclick="navigate('../site/projets-sco.html')">
+                        <div class="projet-big-card-left">
+                            <span class="projet-big-tag">Scolaire</span>
+                            <h2 class="projet-big-title">Projets scolaires</h2>
+                            <p class="projet-big-desc">Voici les projets que j'ai réalisés en informatique tout au long de ma scolarité : <br/> Applications Java, sites web, veilles technologiques, et bien plus.</p>
+                            <span class="projet-big-cta">Voir les projets <span class="arrow">→</span></span>
+                        </div>
+                        <div class="projet-big-icons">
+                            <span>Java</span><span>PHP</span><span>HTML</span><span>CSS</span><span>JS</span><span>Figma</span><span>Suite Adobe</span>
+                        </div>
+                    </div>
+
+                    <div class="projet-big-card" onclick="navigate('../site/projets-pro.html')">
+                        <div class="projet-big-card-left">
+                            <span class="projet-big-tag">Professionnel</span>
+                            <h2 class="projet-big-title">Projets professionnels</h2>
+                            <p class="projet-big-desc">Mes expériences en stage : <br/> Développement d'applications mobiles, gestion de logiciels RH <br/> et formations terrain.</p>
+                            <span class="projet-big-cta">Voir les projets <span class="arrow">→</span></span>
+                        </div>
+                        <div class="projet-big-icons">
+                            <span>WinDev</span><span>OCTIME</span><span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer><p>© 2026 — Hoshi</p></footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
