@@ -286,7 +286,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     display: block;
     position: absolute;
     right:  calc(-118 / 402 * 100vw);
-    top:    calc(590   / 874 * 100dvh);
+    top:    calc(690   / 874 * 100dvh);
     width:  calc(634  / 402 * 100vw);
     height: auto;
     transform: scaleX(-1);
