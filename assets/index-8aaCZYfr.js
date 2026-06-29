@@ -297,31 +297,35 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     display: none;
   }
 
+  /* FIX: bulle réduite (67vw→43vw) + rotation réduite (40deg→20deg)
+     pour coller au modèle et éviter le débordement du texte */
   .bbl {
     position: absolute;
-    left:   calc(20   / 402 * 100vw);
-    top:    calc(115   / 874 * 100dvh);
-    width:  calc(270  / 402 * 100vw);
-    height: calc(270  / 402 * 100vw);
-    transform: rotate(40deg);
+    left:   calc(15   / 402 * 100vw);
+    top:    calc(115  / 874 * 100dvh);
+    width:  calc(175  / 402 * 100vw);
+    height: calc(175  / 402 * 100vw);
+    transform: rotate(20deg);
     z-index: 12;
   }
 
+  /* FIX: counter-rotation alignée + font réduite pour tenir dans la bulle */
   .bbl-text {
     position: absolute;
-    top:  48%;
-    left: 48%;
-    transform: translate(-50%, -50%) rotate(-40deg);
-    width: 62%;
-    font-size: calc(11 / 402 * 100vw);
-    line-height: 1.5;
+    top:  46%;
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    width: 68%;
+    font-size: calc(9 / 402 * 100vw);
+    line-height: 1.45;
   }
 
+  /* FIX: CTA remonté pour suivre le bas de la bulle réduite */
   .bbl-cta {
     display: block;
     position: absolute;
-    left:   calc(155 / 402 * 100vw);
-    top:    calc(330 / 874 * 100dvh);
+    left:   calc(125 / 402 * 100vw);
+    top:    calc(295 / 874 * 100dvh);
     width:  calc(130 / 402 * 100vw);
     transform: translateX(-50%);
     text-align: center;
@@ -337,11 +341,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     font-weight: 600;
   }
 
+  /* FIX: personnage descendu + height réduite pour tenir dans le viewport */
   .char {
     position: absolute;
     left:   calc(245  / 402 * 100vw);
-    top:    calc(280  / 874 * 100dvh);
-    height: calc(600  / 874 * 100dvh);
+    top:    calc(290  / 874 * 100dvh);
+    height: calc(520  / 874 * 100dvh);
     transform: translateX(-50%);
   }
 
@@ -350,12 +355,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     50%       { transform: translateX(-50%) translateY(-10px); }
   }
 
+  /* FIX: contact — même pattern que Hobby (bottom: 3dvh; left: 5vw) */
   .contact {
     position: absolute;
-    left:   calc(30   / 402 * 100vw);
-    bottom: calc(25   / 874 * 100dvh);
-    font-size: calc(13 / 402 * 100vw);
+    bottom: 3dvh;
+    left: 5vw;
+    font-size: 13px;
+    line-height: 1.6;
     z-index: 20;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
   }
 }
 `,Mp=`Je suis Haze aka Stella,
@@ -616,15 +624,14 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
     animation-delay: 0s;
   }
 
-  /* FIX: dvh + valeur augmentée pour que les deux lignes
-     restent visibles quand la barre d'adresse est affichée */
+  /* FIX: bottom/left fixes comme Hobby — simple dvh sans calc complexe */
   .menu-contact {
-    left:   calc(35 / 402 * 100vw);
-    bottom: calc(70 / 874 * 100dvh);
+    bottom: 3dvh;
+    left: 5vw;
     text-align: left;
-    font-size: calc(12 / 402 * 100vw);
+    font-size: 13px;
     line-height: 1.6;
-    padding-bottom: env(safe-area-inset-bottom);
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
   }
 }
 
@@ -654,11 +661,12 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
     left:0vh; 
   }
 
-  /* FIX: dvh ici aussi pour cohérence sur petits phones */
+  /* FIX: idem petits phones */
   .menu-contact {
-    font-size: calc(11 / 375 * 100vw);
-    bottom: calc(70 / 874 * 100dvh);
-    padding-bottom: env(safe-area-inset-bottom);
+    font-size: 12px;
+    bottom: 3dvh;
+    left: 5vw;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
   }
 }
 
