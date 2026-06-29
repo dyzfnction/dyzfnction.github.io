@@ -402,7 +402,6 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
-  /* Remplacement du "ease" par un cubic-bezier ultra fluide */
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
@@ -432,7 +431,6 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
   line-height: 1;
   opacity: 0;
   animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  /* Ajout du transform dans la transition pour un glissement fluide au hover */
   transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   cursor: pointer;
   will-change: transform, opacity, color;
@@ -445,7 +443,6 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
 .menu-item:hover {
   color: #B11A50;
   text-shadow: 0 0 30px rgba(177, 26, 80, 0.5);
-  /* Léger mouvement vers la droite pour accentuer l'interaction */
   transform: translateX(15px);
 }
 
@@ -537,6 +534,12 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
    ════════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
 
+  /* FIX: utilise dvh pour que la hauteur tienne compte
+     de la barre d'adresse Chrome sur Android */
+  .menu-pg {
+    height: 100dvh;
+  }
+
   .menu-group {
     flex-direction: row;
     align-items: center;
@@ -576,7 +579,6 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
   }
 
   .menu-item:hover {
-    /* Mouvement réduit sur mobile pour éviter de déborder */
     transform: translateX(5px);
   }
 
@@ -614,12 +616,15 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
     animation-delay: 0s;
   }
 
+  /* FIX: dvh + valeur augmentée pour que les deux lignes
+     restent visibles quand la barre d'adresse est affichée */
   .menu-contact {
     left:   calc(35 / 402 * 100vw);
-    bottom: calc(50 / 874 * 100vh);
+    bottom: calc(70 / 874 * 100dvh);
     text-align: left;
     font-size: calc(12 / 402 * 100vw);
     line-height: 1.6;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
@@ -649,8 +654,11 @@ au menu`,Fp=45;function Ip(e){let[t,n]=b.useState(0),[r,i]=b.useState(``),[a,o]=
     left:0vh; 
   }
 
+  /* FIX: dvh ici aussi pour cohérence sur petits phones */
   .menu-contact {
     font-size: calc(11 / 375 * 100vw);
+    bottom: calc(70 / 874 * 100dvh);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
