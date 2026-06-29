@@ -256,15 +256,14 @@ const css = `
     animation-delay: 0s;
   }
 
-  /* FIX: dvh + valeur augmentée pour que les deux lignes
-     restent visibles quand la barre d'adresse est affichée */
+  /* FIX: bottom/left fixes comme Hobby — simple dvh sans calc complexe */
   .menu-contact {
-    left:   calc(35 / 402 * 100vw);
-    bottom: calc(70 / 874 * 100dvh);
+    bottom: 3dvh;
+    left: 5vw;
     text-align: left;
-    font-size: calc(12 / 402 * 100vw);
+    font-size: 13px;
     line-height: 1.6;
-    padding-bottom: env(safe-area-inset-bottom);
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
   }
 }
 
@@ -294,11 +293,12 @@ const css = `
     left:0vh; 
   }
 
-  /* FIX: dvh ici aussi pour cohérence sur petits phones */
+  /* FIX: idem petits phones */
   .menu-contact {
-    font-size: calc(11 / 375 * 100vw);
-    bottom: calc(70 / 874 * 100dvh);
-    padding-bottom: env(safe-area-inset-bottom);
+    font-size: 12px;
+    bottom: 3dvh;
+    left: 5vw;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
   }
 }
 
