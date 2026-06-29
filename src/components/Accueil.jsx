@@ -254,7 +254,7 @@ const css = `
     display: block;
     position: absolute;
     right:  calc(-118 / 402 * 100vw);
-    top:    calc(1450  / 874 * 100vw);
+    top:    calc(590   / 874 * 100dvh);
     width:  calc(634  / 402 * 100vw);
     height: auto;
     transform: scaleX(-1);
