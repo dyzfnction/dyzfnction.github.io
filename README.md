@@ -1,1 +1,0 @@
-Bienvenue sur mon portfolio dans lequel vous retrouverez mes projets (école/stage/perso?) ainsi que ma passion pour le dessin !
